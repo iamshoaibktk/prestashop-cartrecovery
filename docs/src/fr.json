@@ -1,0 +1,46 @@
+{
+  "title": "Relance des paniers abandonnés",
+  "subtitle": "Guide d'utilisation",
+  "labels": {"version": "Version", "author": "Auteur", "contact": "Contact", "page": "Page", "contents": "Sommaire", "compat": "Compatibilité"},
+  "sections": [
+    {"title": "Présentation", "content": [
+      {"p": "Ce module envoie un e-mail aux clients et invités qui ont laissé des produits dans leur panier. Chaque e-mail contient un bouton qui connecte le client et ouvre exactement son panier."},
+      {"ul": ["Jusqu'à 3 relances par panier, chacune avec son délai et son texte.", "Des textes dans toutes les langues de votre boutique.", "Un code de réduction personnel optionnel, créé pour le client et utilisable une fois.", "Un lien de désinscription dans chaque e-mail.", "Ouvertures, clics, paniers récupérés et chiffre récupéré."]},
+      {"p": "Ouvrez-le depuis **Modules › Gestionnaire de modules › Relance des paniers abandonnés › Configurer**."}
+    ]},
+    {"title": "Premiers réglages", "content": [
+      {"ol": ["Dans **Réglages**, vérifiez les textes de la relance 1 dans chaque langue (cliquez sur les pastilles de langue).", "Saisissez votre adresse dans **Envoyer un e-mail de test à** et cliquez sur **Envoyer le test**.", "Copiez l'**URL de la tâche cron** et appelez-la toutes les heures depuis votre hébergement, par exemple : curl -s \"<URL cron>\" > /dev/null", "Passez **Envoi automatique** sur **Oui** et enregistrez."]},
+      {"note": "Sans la tâche cron, rien ne part automatiquement. Vous pouvez toujours relancer à la main depuis l'onglet Paniers abandonnés."}
+    ]},
+    {"title": "Relances et délais", "content": [
+      {"p": "La relance 1 est toujours active. Les relances 2 et 3 s'activent dans **Règles d'envoi**. Les délais comptent depuis la dernière modification du panier : un client qui modifie son panier repart de zéro."},
+      {"ul": ["Les relances s'arrêtent dès que le client commande ou se désinscrit.", "Deux relances d'un même panier ne partent jamais à moins d'une heure d'intervalle.", "**Ignorer les paniers de plus de** écarte les vieux paniers quand vous activez l'envoi automatique.", "**Qui reçoit les relances** peut limiter l'envoi automatique aux abonnés à la newsletter ou aux clients ayant accepté les offres partenaires."]}
+    ]},
+    {"title": "Textes et variables", "content": [
+      {"p": "Chaque relance a un objet, un titre et un message par langue. Cliquez sur une variable pour l'insérer dans le message."},
+      {"table": [["Variable", "Devient"], ["{firstname} {lastname}", "le nom du client"], ["{cart_products}", "un tableau des produits avec images et prix"], ["{cart_link}", "le bouton vers le panier"], ["{discount_block}", "un encadré avec le code de réduction"], ["{discount_code} {discount_value} {discount_expiry}", "le code, sa valeur et son dernier jour de validité"], ["{unsubscribe_url}", "le lien de désinscription"]]},
+      {"note": "Si le message ne contient pas {cart_link}, le bouton est ajouté à la fin. Si une réduction est offerte et que le message n'a aucune variable de réduction, l'encadré est ajouté au-dessus du bouton."}
+    ]},
+    {"title": "Codes de réduction", "content": [
+      {"p": "Activez **Code de réduction**, choisissez pourcentage, montant fixe ou livraison gratuite, la valeur, la durée de validité et un panier minimum optionnel. Cochez ensuite **code** à côté des relances qui doivent le contenir."},
+      {"ul": ["Chaque code est une règle panier PrestaShop réservée à ce client, utilisable une fois.", "Les relances suivantes reprennent le même code tant qu'il est valable.", "Avec **Mettre le code dans le panier du client**, la réduction est déjà appliquée à son retour.", "Les codes non utilisés sont supprimés par la tâche cron un jour après leur expiration."]}
+    ]},
+    {"title": "Apparence", "content": [
+      {"p": "Choisissez l'un des 4 modèles (Classique, Contraste, Minimal, Vitrine) et réglez la couleur principale, la couleur de l'en-tête, le texte du bouton, une accroche optionnelle, le bandeau de réassurance, le pied de page et l'image de bannière. L'aperçu en direct montre l'e-mail avec un vrai panier, sur ordinateur ou mobile."}
+    ]},
+    {"title": "Paniers abandonnés et relances personnalisées", "content": [
+      {"p": "L'onglet **Paniers abandonnés** liste les paniers des clients et invités avec leur statut : non relancé, relance N envoyée, récupéré (avec la commande) ou désinscrit. Filtrez par statut, période ou client, envoyez la relance suivante à un panier ou à une sélection."},
+      {"p": "Le crayon ouvre **Relance personnalisée** : changez le modèle, le texte ou la réduction pour ce client uniquement, puis envoyez. Vos réglages enregistrés ne changent pas."}
+    ]},
+    {"title": "Confidentialité et désinscriptions", "content": [
+      {"ul": ["La page de désinscription demande une confirmation : les scanners de messagerie ne désinscrivent jamais personne. Gmail et Apple Mail peuvent aussi désinscrire en un clic.", "Les clients désinscrits ne reçoivent plus aucune relance, même manuelle.", "Avec **Compter les ouvertures et les clics**, l'e-mail contient une image invisible et le lien du panier passe par votre boutique. Désactivez-le si vous préférez.", "Le module répond aux demandes d'export et de suppression du module RGPD officiel de PrestaShop."]},
+      {"note": "Vérifiez ce qu'exige la loi de votre pays avant d'écrire à des clients qui n'ont pas accepté les e-mails marketing."}
+    ]},
+    {"title": "Bon à savoir", "content": [
+      {"ul": ["Un invité peut être relancé dès qu'il a saisi son e-mail lors de la commande. Un visiteur qui n'a jamais donné d'e-mail ne peut pas l'être.", "En multiboutique, les réglages suivent le contexte de boutique et chaque boutique a sa propre URL cron.", "Les e-mails utilisent les réglages e-mail de votre boutique (Paramètres avancés › E-mail). Vérifiez-les avec l'e-mail de test.", "Les ouvertures sont approximatives : certaines messageries chargent les images par confidentialité, d'autres les bloquent."]}
+    ]},
+    {"title": "Assistance", "content": [
+      {"p": "Gratuit et open source (AFL-3.0). Questions, fonctions sur mesure ou aide pour votre boutique : iamshoaibktk@gmail.com, WhatsApp +923459016286, https://www.fiverr.com/shoaibktk"}
+    ]}
+  ]
+}

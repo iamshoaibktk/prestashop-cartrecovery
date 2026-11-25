@@ -1,0 +1,46 @@
+{
+  "title": "Odzyskiwanie porzuconych koszyków",
+  "subtitle": "Instrukcja",
+  "labels": {"version": "Wersja", "author": "Autor", "contact": "Kontakt", "page": "Strona", "contents": "Spis treści", "compat": "Zgodność"},
+  "sections": [
+    {"title": "Przegląd", "content": [
+      {"p": "Moduł wysyła e-maile do klientów i gości, którzy zostawili produkty w koszyku. Każdy e-mail ma przycisk, który loguje klienta i otwiera dokładnie jego koszyk."},
+      {"ul": ["Do 3 przypomnień na koszyk, każde z własnym opóźnieniem i tekstem.", "Teksty w każdym języku sklepu.", "Opcjonalny osobisty kod rabatowy, tworzony dla klienta i jednorazowy.", "Link do wypisania się w każdym e-mailu.", "Otwarcia, kliknięcia, odzyskane koszyki i przychód."]},
+      {"p": "Otwórz go w **Moduły › Menedżer modułów › Odzyskiwanie porzuconych koszyków › Konfiguruj**."}
+    ]},
+    {"title": "Pierwsza konfiguracja", "content": [
+      {"ol": ["W **Ustawieniach** sprawdź teksty przypomnienia 1 w każdym języku (kliknij przyciski języków).", "Wpisz swój adres w **Wyślij testowy e-mail do** i kliknij **Wyślij test**.", "Skopiuj **adres URL crona** i wywołuj go co godzinę z panelu hostingu, na przykład: curl -s \"<URL crona>\" > /dev/null", "Ustaw **Wysyłka automatyczna** na **Tak** i zapisz."]},
+      {"note": "Bez crona nic nie wychodzi automatycznie. Przypomnienia można zawsze wysłać ręcznie z zakładki Porzucone koszyki."}
+    ]},
+    {"title": "Przypomnienia i czas", "content": [
+      {"p": "Przypomnienie 1 jest zawsze włączone. Przypomnienia 2 i 3 włączasz w **Zasadach wysyłki**. Czas liczy się od ostatniej zmiany koszyka: gdy klient go zmieni, liczenie zaczyna się od nowa."},
+      {"ul": ["Przypomnienia kończą się, gdy klient złoży zamówienie lub się wypisze.", "Dwa przypomnienia o tym samym koszyku nigdy nie wychodzą w odstępie krótszym niż godzina.", "**Pomijaj koszyki starsze niż** pomija stare koszyki po włączeniu wysyłki automatycznej.", "**Kto dostaje przypomnienia** może ograniczyć wysyłkę automatyczną do subskrybentów newslettera lub klientów, którzy zgodzili się na oferty partnerów."]}
+    ]},
+    {"title": "Teksty i zmienne", "content": [
+      {"p": "Każde przypomnienie ma temat, tytuł i wiadomość w każdym języku. Kliknij zmienną, aby wstawić ją do wiadomości."},
+      {"table": [["Zmienna", "Zamienia się w"], ["{firstname} {lastname}", "imię i nazwisko klienta"], ["{cart_products}", "tabelę produktów ze zdjęciami i cenami"], ["{cart_link}", "przycisk powrotu do koszyka"], ["{discount_block}", "ramkę z kodem rabatowym"], ["{discount_code} {discount_value} {discount_expiry}", "kod, jego wartość i ostatni dzień ważności"], ["{unsubscribe_url}", "link do wypisania się"]]},
+      {"note": "Jeśli w wiadomości nie ma {cart_link}, przycisk zostanie dodany na końcu. Jeśli jest rabat, a w wiadomości brak zmiennej rabatu, ramka pojawi się nad przyciskiem."}
+    ]},
+    {"title": "Kody rabatowe", "content": [
+      {"p": "Włącz **Kod rabatowy**, wybierz procent, stałą kwotę lub darmową dostawę, wartość, liczbę dni ważności i opcjonalny minimalny koszyk. Następnie zaznacz **kod** przy przypomnieniach, które mają go zawierać."},
+      {"ul": ["Każdy kod to reguła koszyka PrestaShop tylko dla tego klienta, jednorazowa.", "Kolejne przypomnienia powtarzają ten sam kod, dopóki jest ważny.", "Z opcją **Dodaj kod do koszyka klienta** rabat jest już naliczony, gdy klient wraca.", "Niewykorzystane kody cron usuwa dzień po wygaśnięciu."]}
+    ]},
+    {"title": "Wygląd", "content": [
+      {"p": "Wybierz jeden z 4 projektów (Klasyczny, Wyrazisty, Minimalny, Witryna) i ustaw kolor główny, kolor nagłówka, tekst przycisku, opcjonalne hasło, pasek zaufania, stopkę i obraz banera. Podgląd na żywo pokazuje e-mail z prawdziwym koszykiem, na komputerze lub telefonie."}
+    ]},
+    {"title": "Porzucone koszyki i pojedyncze przypomnienia", "content": [
+      {"p": "Zakładka **Porzucone koszyki** pokazuje koszyki klientów i gości ze statusem: bez przypomnienia, wysłano przypomnienie N, odzyskany (z zamówieniem) lub wypisany. Filtruj według statusu, okresu lub klienta i wysyłaj kolejne przypomnienie do jednego koszyka lub do zaznaczonych."},
+      {"p": "Ołówek otwiera **Pojedyncze przypomnienie**: zmień projekt, tekst lub rabat tylko dla tego klienta i wyślij. Zapisane ustawienia się nie zmieniają."}
+    ]},
+    {"title": "Prywatność i wypisania", "content": [
+      {"ul": ["Strona wypisania prosi o potwierdzenie, więc skanery poczty nigdy nikogo nie wypisują. Gmail i Apple Mail pozwalają też wypisać się jednym kliknięciem.", "Wypisani klienci nie dostają żadnych przypomnień, także ręcznych.", "Z opcją **Licz otwarcia i kliknięcia** e-mail zawiera niewidoczny obrazek, a link do koszyka przechodzi przez Twój sklep. Wyłącz ją, jeśli wolisz.", "Moduł obsługuje żądania eksportu i usunięcia danych z oficjalnego modułu RODO PrestaShop."]},
+      {"note": "Sprawdź, czego wymaga prawo w Twoim kraju, zanim napiszesz do klientów, którzy nie zgodzili się na e-maile marketingowe."}
+    ]},
+    {"title": "Warto wiedzieć", "content": [
+      {"ul": ["Gość może dostać przypomnienie, gdy wpisze e-mail przy składaniu zamówienia. Odwiedzający, który nie podał e-maila, nie.", "W multisklepie ustawienia zależą od kontekstu sklepu, a każdy sklep ma własny adres URL crona.", "E-maile korzystają z ustawień poczty sklepu (Zaawansowane › E-mail). Sprawdź je testowym e-mailem.", "Otwarcia są przybliżone: niektóre programy pocztowe wczytują obrazy dla prywatności, inne je blokują."]}
+    ]},
+    {"title": "Pomoc", "content": [
+      {"p": "Darmowy i open source (AFL-3.0). Pytania, funkcje na zamówienie lub pomoc ze sklepem: iamshoaibktk@gmail.com, WhatsApp +923459016286, https://www.fiverr.com/shoaibktk"}
+    ]}
+  ]
+}

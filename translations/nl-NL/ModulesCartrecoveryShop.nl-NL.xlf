@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="cartrecovery" source-language="en-US" target-language="nl-NL" datatype="plaintext">
+    <body>
+      <trans-unit id="95fad4d07da44888ab5504b9742c387f">
+        <source>Cart reminders</source>
+        <target>Winkelwagenherinneringen</target>
+      </trans-unit>
+      <trans-unit id="2d742503d8b4345f17288a21cc5f1df0">
+        <source>Do you want to stop receiving e-mails about the carts you leave in our shop?</source>
+        <target>Wil je geen e-mails meer ontvangen over winkelwagens die je in onze winkel achterlaat?</target>
+      </trans-unit>
+      <trans-unit id="4182c8f19d40c7ca236a5f4f83faeb6b">
+        <source>Unsubscribe</source>
+        <target>Afmelden</target>
+      </trans-unit>
+      <trans-unit id="2797da0c1a2ea225df431c0487d73a2b">
+        <source>Keep receiving them</source>
+        <target>Blijven ontvangen</target>
+      </trans-unit>
+      <trans-unit id="38b1273e253391d29e9de4920630b642">
+        <source>You are unsubscribed. You will not receive cart reminders any more.</source>
+        <target>Je bent afgemeld. Je ontvangt geen winkelwagenherinneringen meer.</target>
+      </trans-unit>
+      <trans-unit id="78700f69349a3b24ae88c6ed5577b034">
+        <source>Unsubscribed by mistake? Receive them again</source>
+        <target>Per ongeluk afgemeld? Weer ontvangen</target>
+      </trans-unit>
+      <trans-unit id="ebe329457cc5fe52dac0cab7b5f9d13a">
+        <source>Back to the shop</source>
+        <target>Terug naar de winkel</target>
+      </trans-unit>
+      <trans-unit id="480695861faa2f0a318b3240603ce8c7">
+        <source>Done. You will receive cart reminders again.</source>
+        <target>Klaar. Je ontvangt weer winkelwagenherinneringen.</target>
+      </trans-unit>
+      <trans-unit id="e0788c3d9ec0db2c1ccc98fcd00bfcd4">
+        <source>This link is not valid. Please use the link from your latest e-mail.</source>
+        <target>Deze link is ongeldig. Gebruik de link uit je nieuwste e-mail.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

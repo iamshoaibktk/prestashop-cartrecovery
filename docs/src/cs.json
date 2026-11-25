@@ -1,0 +1,46 @@
+{
+  "title": "Obnova opuštěných košíků",
+  "subtitle": "Uživatelská příručka",
+  "labels": {"version": "Verze", "author": "Autor", "contact": "Kontakt", "page": "Strana", "contents": "Obsah", "compat": "Kompatibilita"},
+  "sections": [
+    {"title": "Přehled", "content": [
+      {"p": "Modul posílá e-maily zákazníkům a hostům, kteří nechali produkty v košíku. Každý e-mail má tlačítko, které zákazníka přihlásí a otevře přesně jeho košík."},
+      {"ul": ["Až 3 připomínky na košík, každá s vlastní prodlevou a textem.", "Texty ve všech jazycích obchodu.", "Volitelný osobní slevový kód, vytvořený pro zákazníka a jednorázový.", "Odkaz pro odhlášení v každém e-mailu.", "Otevření, prokliky, obnovené košíky a tržby."]},
+      {"p": "Otevřete ho přes **Moduly › Správce modulů › Obnova opuštěných košíků › Konfigurovat**."}
+    ]},
+    {"title": "První nastavení", "content": [
+      {"ol": ["V **Nastavení** zkontrolujte texty připomínky 1 v každém jazyce (klikněte na tlačítka jazyků).", "Zadejte svou adresu do **Poslat testovací e-mail na** a klikněte na **Odeslat test**.", "Zkopírujte **URL pro cron** a volejte ji každou hodinu z hostingu, například: curl -s \"<URL cronu>\" > /dev/null", "Nastavte **Automatické odesílání** na **Ano** a uložte."]},
+      {"note": "Bez cronu se nic automaticky neodešle. Připomínky můžete vždy poslat ručně ze záložky Opuštěné košíky."}
+    ]},
+    {"title": "Připomínky a časy", "content": [
+      {"p": "Připomínka 1 je vždy zapnutá. Připomínky 2 a 3 zapnete v **Pravidlech odesílání**. Časy se počítají od poslední změny košíku: když zákazník košík změní, začíná se znovu."},
+      {"ul": ["Připomínky končí, jakmile zákazník objedná nebo se odhlásí.", "Dvě připomínky ke stejnému košíku nikdy neodejdou s odstupem kratším než hodina.", "**Ignorovat košíky starší než** vynechá staré košíky, když zapnete automatické odesílání.", "**Kdo dostává připomínky** může omezit automatické odesílání na odběratele newsletteru nebo zákazníky se souhlasem s nabídkami partnerů."]}
+    ]},
+    {"title": "Texty a proměnné", "content": [
+      {"p": "Každá připomínka má v každém jazyce předmět, nadpis a zprávu. Kliknutím na proměnnou ji vložíte do zprávy."},
+      {"table": [["Proměnná", "Změní se na"], ["{firstname} {lastname}", "jméno zákazníka"], ["{cart_products}", "tabulku produktů s obrázky a cenami"], ["{cart_link}", "tlačítko zpět do košíku"], ["{discount_block}", "rámeček se slevovým kódem"], ["{discount_code} {discount_value} {discount_expiry}", "kód, jeho hodnotu a poslední den platnosti"], ["{unsubscribe_url}", "odkaz pro odhlášení"]]},
+      {"note": "Pokud ve zprávě chybí {cart_link}, tlačítko se přidá na konec. Pokud je nabídnuta sleva a zpráva nemá žádnou proměnnou slevy, rámeček se přidá nad tlačítko."}
+    ]},
+    {"title": "Slevové kódy", "content": [
+      {"p": "Zapněte **Slevový kód**, zvolte procenta, pevnou částku nebo dopravu zdarma, hodnotu, počet dní platnosti a volitelně minimální košík. Pak zaškrtněte **kód** u připomínek, které ho mají obsahovat."},
+      {"ul": ["Každý kód je pravidlo košíku PrestaShopu jen pro daného zákazníka, jednorázové.", "Další připomínky opakují stejný kód, dokud platí.", "S volbou **Vložit kód do košíku zákazníka** je sleva po návratu už uplatněná.", "Nepoužité kódy cron smaže den po vypršení."]}
+    ]},
+    {"title": "Vzhled", "content": [
+      {"p": "Vyberte jeden ze 4 vzhledů (Klasický, Výrazný, Minimální, Výloha) a nastavte hlavní barvu, barvu hlavičky, text tlačítka, volitelný slogan, pruh důvěry, patičku a obrázek banneru. Živý náhled ukazuje e-mail se skutečným košíkem, na počítači i mobilu."}
+    ]},
+    {"title": "Opuštěné košíky a jednorázové připomínky", "content": [
+      {"p": "Záložka **Opuštěné košíky** zobrazuje košíky zákazníků a hostů se stavem: bez připomínky, odeslána připomínka N, obnoveno (s objednávkou) nebo odhlášeno. Filtrujte podle stavu, období nebo zákazníka a pošlete další připomínku jednomu košíku nebo výběru."},
+      {"p": "Tužka otevře **Jednorázovou připomínku**: změňte vzhled, text nebo slevu jen pro tohoto zákazníka a odešlete. Uložené nastavení se nemění."}
+    ]},
+    {"title": "Soukromí a odhlášení", "content": [
+      {"ul": ["Stránka odhlášení žádá potvrzení, takže poštovní skenery nikoho neodhlásí. Gmail a Apple Mail umí odhlásit i jedním kliknutím.", "Odhlášení zákazníci nedostávají žádné připomínky, ani ruční.", "S volbou **Počítat otevření a prokliky** obsahuje e-mail neviditelný obrázek a odkaz na košík vede přes váš obchod. Pokud chcete, vypněte ji.", "Modul odpovídá na žádosti o export a výmaz z oficiálního GDPR modulu PrestaShopu."]},
+      {"note": "Než napíšete zákazníkům bez souhlasu s marketingovými e-maily, ověřte, co vyžaduje zákon vaší země."}
+    ]},
+    {"title": "Dobré vědět", "content": [
+      {"ul": ["Host může dostat připomínku, jakmile při objednávce zadá e-mail. Návštěvník, který e-mail nikdy nezadal, ne.", "V multistore se nastavení řídí kontextem obchodu a každý obchod má vlastní URL pro cron.", "E-maily používají e-mailové nastavení obchodu (Pokročilé parametry › E-mail). Ověřte ho testovacím e-mailem.", "Otevření jsou přibližná: některé poštovní aplikace načítají obrázky kvůli soukromí, jiné je blokují."]}
+    ]},
+    {"title": "Podpora", "content": [
+      {"p": "Zdarma a open source (AFL-3.0). Dotazy, funkce na míru nebo pomoc s obchodem: iamshoaibktk@gmail.com, WhatsApp +923459016286, https://www.fiverr.com/shoaibktk"}
+    ]}
+  ]
+}

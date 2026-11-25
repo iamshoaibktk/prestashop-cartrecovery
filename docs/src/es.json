@@ -1,0 +1,46 @@
+{
+  "title": "Recuperación de carritos abandonados",
+  "subtitle": "Guía de uso",
+  "labels": {"version": "Versión", "author": "Autor", "contact": "Contacto", "page": "Página", "contents": "Índice", "compat": "Compatibilidad"},
+  "sections": [
+    {"title": "Resumen", "content": [
+      {"p": "El módulo envía un correo a los clientes e invitados que dejaron productos en el carrito. Cada correo tiene un botón que inicia la sesión del cliente y abre exactamente su carrito."},
+      {"ul": ["Hasta 3 recordatorios por carrito, cada uno con su espera y su texto.", "Textos en todos los idiomas de su tienda.", "Un código de descuento personal opcional, creado para el cliente y de un solo uso.", "Un enlace de baja en cada correo.", "Aperturas, clics, carritos recuperados e ingresos recuperados."]},
+      {"p": "Ábralo en **Módulos › Gestor de módulos › Recuperación de carritos abandonados › Configurar**."}
+    ]},
+    {"title": "Primera configuración", "content": [
+      {"ol": ["En **Configuración**, revise los textos del recordatorio 1 en cada idioma (haga clic en los botones de idioma).", "Escriba su dirección en **Enviar un correo de prueba a** y haga clic en **Enviar la prueba**.", "Copie la **URL del cron** y llámela cada hora desde su alojamiento, por ejemplo: curl -s \"<URL del cron>\" > /dev/null", "Ponga **Envío automático** en **Sí** y guarde."]},
+      {"note": "Sin el cron no se envía nada automáticamente. Puede seguir enviando recordatorios a mano desde la pestaña Carritos abandonados."}
+    ]},
+    {"title": "Recordatorios y tiempos", "content": [
+      {"p": "El recordatorio 1 está siempre activo. Los recordatorios 2 y 3 se activan en **Reglas de envío**. Los tiempos cuentan desde el último cambio del carrito: si el cliente lo modifica, empieza de nuevo."},
+      {"ul": ["Los recordatorios se detienen en cuanto el cliente compra o se da de baja.", "Dos recordatorios del mismo carrito nunca salen con menos de una hora de diferencia.", "**Ignorar carritos de más de** deja fuera los carritos antiguos al activar el envío automático.", "**Quién recibe recordatorios** puede limitar el envío automático a suscriptores del boletín o a clientes que aceptaron ofertas de socios."]}
+    ]},
+    {"title": "Textos y variables", "content": [
+      {"p": "Cada recordatorio tiene asunto, título y mensaje por idioma. Haga clic en una variable para insertarla en el mensaje."},
+      {"table": [["Variable", "Se convierte en"], ["{firstname} {lastname}", "el nombre del cliente"], ["{cart_products}", "una tabla de productos con imágenes y precios"], ["{cart_link}", "el botón para volver al carrito"], ["{discount_block}", "un recuadro con el código de descuento"], ["{discount_code} {discount_value} {discount_expiry}", "el código, su valor y su último día válido"], ["{unsubscribe_url}", "el enlace de baja"]]},
+      {"note": "Si el mensaje no tiene {cart_link}, el botón se añade al final. Si hay descuento y el mensaje no tiene ninguna variable de descuento, el recuadro se añade encima del botón."}
+    ]},
+    {"title": "Códigos de descuento", "content": [
+      {"p": "Active **Código de descuento**, elija porcentaje, importe fijo o envío gratis, el valor, los días de validez y un carrito mínimo opcional. Después marque **código** junto a los recordatorios que deben llevarlo."},
+      {"ul": ["Cada código es una regla de carrito de PrestaShop solo para ese cliente, de un solo uso.", "Los recordatorios siguientes repiten el mismo código mientras sea válido.", "Con **Poner el código en el carrito del cliente**, el descuento ya está aplicado cuando vuelve.", "El cron borra los códigos sin usar un día después de caducar."]}
+    ]},
+    {"title": "Apariencia", "content": [
+      {"p": "Elija uno de los 4 diseños (Clásico, Intenso, Minimalista, Escaparate) y ajuste el color principal, el color de la cabecera, el texto del botón, un eslogan opcional, la franja de confianza, el pie y la imagen de cabecera. La vista previa en directo muestra el correo con un carrito real, en escritorio o móvil."}
+    ]},
+    {"title": "Carritos abandonados y recordatorios puntuales", "content": [
+      {"p": "La pestaña **Carritos abandonados** lista los carritos de clientes e invitados con su estado: sin recordar, recordatorio N enviado, recuperado (con el pedido) o dado de baja. Filtre por estado, periodo o cliente y envíe el siguiente recordatorio a un carrito o a una selección."},
+      {"p": "El lápiz abre **Recordatorio puntual**: cambie el diseño, el texto o el descuento solo para ese cliente y envíelo. Su configuración guardada no cambia."}
+    ]},
+    {"title": "Privacidad y bajas", "content": [
+      {"ul": ["La página de baja pide confirmación, así los escáneres de correo nunca dan de baja a nadie. Gmail y Apple Mail también permiten darse de baja con un clic.", "Los clientes dados de baja no reciben ningún recordatorio, tampoco manual.", "Con **Contar aperturas y clics**, el correo lleva una imagen invisible y el enlace del carrito pasa por su tienda. Desactívelo si lo prefiere.", "El módulo responde a las solicitudes de exportación y borrado del módulo RGPD oficial de PrestaShop."]},
+      {"note": "Compruebe lo que exige la ley de su país antes de escribir a clientes que no aceptaron correos de marketing."}
+    ]},
+    {"title": "Conviene saber", "content": [
+      {"ul": ["Un invitado puede recibir recordatorios en cuanto escribe su correo al pagar. Un visitante que nunca dio su correo, no.", "En multitienda, la configuración sigue el contexto de tienda y cada tienda tiene su propia URL de cron.", "Los correos usan la configuración de correo de su tienda (Parámetros avanzados › Correo electrónico). Compruébela con el correo de prueba.", "Las aperturas son aproximadas: algunas aplicaciones cargan las imágenes por privacidad y otras las bloquean."]}
+    ]},
+    {"title": "Soporte", "content": [
+      {"p": "Gratuito y de código abierto (AFL-3.0). Preguntas, funciones a medida o ayuda con su tienda: iamshoaibktk@gmail.com, WhatsApp +923459016286, https://www.fiverr.com/shoaibktk"}
+    ]}
+  ]
+}

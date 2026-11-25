@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="cartrecovery" source-language="en-US" target-language="pt-PT" datatype="plaintext">
+    <body>
+      <trans-unit id="cc57878bfa900d4204d7edcc72e5984f">
+        <source>Abandoned Cart Recovery</source>
+        <target>Recuperação de carrinhos abandonados</target>
+      </trans-unit>
+      <trans-unit id="15c69d50a6932057a2fce951e29b6548">
+        <source>Reminds customers about the cart they left, with a one-click link back to it, an optional discount code and an unsubscribe link. Manual or automatic.</source>
+        <target>Lembra os clientes do carrinho que deixaram, com uma ligação de um clique para esse carrinho, um código de desconto opcional e uma ligação para cancelar a subscrição. Manual ou automático.</target>
+      </trans-unit>
+      <trans-unit id="bb8956c67b82c7444a80c6b2433dd8b4">
+        <source>Are you sure you want to uninstall this module?</source>
+        <target>Tem a certeza de que pretende desinstalar este módulo?</target>
+      </trans-unit>
+      <trans-unit id="31fde7b05ac8952dacf4af8a704074ec">
+        <source>Preview</source>
+        <target>Pré-visualização</target>
+      </trans-unit>
+      <trans-unit id="c7892ebbb139886662c6f2fc8c450710">
+        <source>Subject</source>
+        <target>Assunto</target>
+      </trans-unit>
+      <trans-unit id="7339533dd1c2d37f78e0400bd627e958">
+        <source>In the preview, the link opens the cart page without logging anyone in.</source>
+        <target>Na pré-visualização, a ligação abre a página do carrinho sem iniciar sessão de ninguém.</target>
+      </trans-unit>
+      <trans-unit id="bb699afa949bda7da8cb24ba0d2a5a6a">
+        <source>Cart #%id%: not found or empty.</source>
+        <target>Carrinho n.º %id%: não encontrado ou vazio.</target>
+      </trans-unit>
+      <trans-unit id="66d527860b40d15dca3bc99ad10f6a57">
+        <source>Cart #%id%: the customer has already ordered.</source>
+        <target>Carrinho n.º %id%: o cliente já encomendou.</target>
+      </trans-unit>
+      <trans-unit id="9345546cbd90ee66ee1e0b04465e744e">
+        <source>Cart #%id%: the customer e-mail is not valid.</source>
+        <target>Carrinho n.º %id%: o e-mail do cliente não é válido.</target>
+      </trans-unit>
+      <trans-unit id="c616c0cad62217a64cfaeeb1bcc39260">
+        <source>Cart #%id%: the customer unsubscribed from cart reminders.</source>
+        <target>Carrinho n.º %id%: o cliente cancelou a subscrição dos lembretes de carrinho.</target>
+      </trans-unit>
+      <trans-unit id="dc8adbd98a354b40411c715fb27b66f4">
+        <source>Cart #%id%: already reminded.</source>
+        <target>Carrinho n.º %id%: já lembrado.</target>
+      </trans-unit>
+      <trans-unit id="f59b3ef6e6b6911cb53f3ade1f41c5d8">
+        <source>Cart #%id%: the e-mail could not be sent (check the e-mail settings of your shop).</source>
+        <target>Carrinho n.º %id%: não foi possível enviar o e-mail (verifique as definições de e-mail da sua loja).</target>
+      </trans-unit>
+      <trans-unit id="c252b33e4483db17f3d6f5c1dbf064a9">
+        <source>Enter a valid test e-mail address.</source>
+        <target>Indique um endereço de e-mail de teste válido.</target>
+      </trans-unit>
+      <trans-unit id="86feb4d5caf6b125896fa48568c09951">
+        <source>No cart is available to build the test e-mail.</source>
+        <target>Nenhum carrinho disponível para criar o e-mail de teste.</target>
+      </trans-unit>
+      <trans-unit id="b2fd10f117f06c3b0ccf4b7596f0085d">
+        <source>The test e-mail could not be sent. Check Advanced parameters &gt; E-mail.</source>
+        <target>Não foi possível enviar o e-mail de teste. Verifique Parâmetros avançados &gt; E-mail.</target>
+      </trans-unit>
+      <trans-unit id="5329eb4795b4cf23c77d386fba568fe3">
+        <source>No abandoned cart yet: the preview needs one cart with products from a customer or guest.</source>
+        <target>Ainda não há carrinhos abandonados: a pré-visualização precisa de um carrinho com produtos de um cliente ou convidado.</target>
+      </trans-unit>
+      <trans-unit id="cede85445b0abc7e95aac2fe6ddc960f">
+        <source>Test e-mail sent.</source>
+        <target>E-mail de teste enviado.</target>
+      </trans-unit>
+      <trans-unit id="2f893d24ed03633e2dcd81554266e12e">
+        <source>Choose a cart.</source>
+        <target>Escolha um carrinho.</target>
+      </trans-unit>
+      <trans-unit id="15d7e7b5c5af287ebe70403c1befcfc0">
+        <source>The subject and the message are required.</source>
+        <target>O assunto e a mensagem são obrigatórios.</target>
+      </trans-unit>
+      <trans-unit id="1d23c88c4a391ed6127e3904ca2ce733">
+        <source>No cart selected.</source>
+        <target>Nenhum carrinho selecionado.</target>
+      </trans-unit>
+      <trans-unit id="cef3aaf1795ab15928c571dde9c4b056">
+        <source>Reminders sent: %n%</source>
+        <target>Lembretes enviados: %n%</target>
+      </trans-unit>
+      <trans-unit id="22fba8b118d1fb9cc73f0ff60c8399b1">
+        <source>Reminder %n%: the subject and the message are required in the default language.</source>
+        <target>Lembrete %n%: o assunto e a mensagem são obrigatórios no idioma predefinido.</target>
+      </trans-unit>
+      <trans-unit id="69eba278dbea5b2cddfb721a2d830348">
+        <source>Reminder %n% must be sent later than reminder %p%.</source>
+        <target>O lembrete %n% tem de ser enviado depois do lembrete %p%.</target>
+      </trans-unit>
+      <trans-unit id="bcb9e1ea902818cdfe2167b8ecb8d23c">
+        <source>The blind copy address is not valid.</source>
+        <target>O endereço de cópia oculta não é válido.</target>
+      </trans-unit>
+      <trans-unit id="115f6736183c881a86573c425c19a657">
+        <source>The test address is not valid.</source>
+        <target>O endereço de teste não é válido.</target>
+      </trans-unit>
+      <trans-unit id="25500bf274755ecf0a88387125854ba4">
+        <source>Enter a discount value above 0 (100 at most for a percentage).</source>
+        <target>Indique um valor de desconto acima de 0 (no máximo 100 para uma percentagem).</target>
+      </trans-unit>
+      <trans-unit id="9a7e58ee13cb727cb7c4acc68f4cafe5">
+        <source>Settings saved.</source>
+        <target>Definições guardadas.</target>
+      </trans-unit>
+      <trans-unit id="58d4e57b19680d3f86a7ca39d8acc010">
+        <source>Unknown design.</source>
+        <target>Design desconhecido.</target>
+      </trans-unit>
+      <trans-unit id="47ab43d8f688a545ede8f3e9055a24cc">
+        <source>The image could not be saved (check the permissions of the module img/ folder).</source>
+        <target>Não foi possível guardar a imagem (verifique as permissões da pasta img/ do módulo).</target>
+      </trans-unit>
+      <trans-unit id="8a537d2458bcdc8f161bfcbf13feab9f">
+        <source>Appearance saved.</source>
+        <target>Aspeto guardado.</target>
+      </trans-unit>
+      <trans-unit id="e1ec27db39820968e757dfe382c25db2">
+        <source>Reminder %n% sent on %date%</source>
+        <target>Lembrete %n% enviado em %date%</target>
+      </trans-unit>
+      <trans-unit id="c9a8987aa0bdab6cd6fb98e8f2f8716e">
+        <source>Not reminded</source>
+        <target>Não lembrado</target>
+      </trans-unit>
+      <trans-unit id="ee95e09cffb33eaa3d5dbc96836f8555">
+        <source>Customer first name</source>
+        <target>Nome próprio do cliente</target>
+      </trans-unit>
+      <trans-unit id="4d832809bd98c48227ce0d73b6b0f1f4">
+        <source>Customer last name</source>
+        <target>Apelido do cliente</target>
+      </trans-unit>
+      <trans-unit id="3f976f530769c01da75a4f703a29647c">
+        <source>Table of the cart products</source>
+        <target>Tabela dos produtos do carrinho</target>
+      </trans-unit>
+      <trans-unit id="61b07ae28c0e6cf5204810f0527c7854">
+        <source>Cart total, tax incl.</source>
+        <target>Total do carrinho, IVA incl.</target>
+      </trans-unit>
+      <trans-unit id="282d66d5077c09b30ec03e2f96266a0b">
+        <source>Button back to the cart</source>
+        <target>Botão de volta ao carrinho</target>
+      </trans-unit>
+      <trans-unit id="2965004fbeab751fb1d61057176767cc">
+        <source>Plain link to the cart</source>
+        <target>Ligação simples para o carrinho</target>
+      </trans-unit>
+      <trans-unit id="e93c33bd1341ab74195430daeb63db13">
+        <source>Shop name</source>
+        <target>Nome da loja</target>
+      </trans-unit>
+      <trans-unit id="d91accd1a71a1ab1375722a29789dad3">
+        <source>Box with the discount code</source>
+        <target>Caixa com o código de desconto</target>
+      </trans-unit>
+      <trans-unit id="83d1fafd2eb77042b0a2a0a771334cd2">
+        <source>The discount code alone</source>
+        <target>Só o código de desconto</target>
+      </trans-unit>
+      <trans-unit id="19e8cdd097b7ad53232bae907bb83181">
+        <source>Discount value (10 %, 5.00 or free shipping)</source>
+        <target>Valor do desconto (10 %, 5,00 ou portes grátis)</target>
+      </trans-unit>
+      <trans-unit id="b59862d22318627132a2a95c963e3cea">
+        <source>Last day the code works</source>
+        <target>Último dia de validade do código</target>
+      </trans-unit>
+      <trans-unit id="077580a7d5fa27cc5886c53ae575bbc3">
+        <source>Unsubscribe link (always in the footer too)</source>
+        <target>Ligação para cancelar a subscrição (sempre também no rodapé)</target>
+      </trans-unit>
+      <trans-unit id="d35b51b639528d580362ca7042de6a0e">
+        <source>Classic</source>
+        <target>Clássico</target>
+      </trans-unit>
+      <trans-unit id="185c2103da527458be5dc138a5f3c00a">
+        <source>Dark band with the logo centred, title in capitals.</source>
+        <target>Faixa escura com o logótipo ao centro, título em maiúsculas.</target>
+      </trans-unit>
+      <trans-unit id="114c3050111d8b8ddd830b99ccebd246">
+        <source>Bold</source>
+        <target>Forte</target>
+      </trans-unit>
+      <trans-unit id="2f286225f1d3591a4632877c4ded2977">
+        <source>Dark header, coloured accents, products as cards, round button.</source>
+        <target>Cabeçalho escuro, detalhes coloridos, produtos em cartões, botão arredondado.</target>
+      </trans-unit>
+      <trans-unit id="30fc6bbba82125243ecf4ddb27fee645">
+        <source>Minimal</source>
+        <target>Minimalista</target>
+      </trans-unit>
+      <trans-unit id="ab99d46499afa1f94271fdaf347f19ae">
+        <source>White background, lots of space, outlined button.</source>
+        <target>Fundo branco, muito espaço, botão com contorno.</target>
+      </trans-unit>
+      <trans-unit id="f4b67c735ca7ce8fe886be1e47071d72">
+        <source>Showcase</source>
+        <target>Montra</target>
+      </trans-unit>
+      <trans-unit id="2c3d6ac9cef04518ae7250b96da047f9">
+        <source>Large banner photo, products in a grid, full-width button.</source>
+        <target>Grande foto de banner, produtos em grelha, botão em largura total.</target>
+      </trans-unit>
+      <trans-unit id="52ea46de6c2c9b5d848c9b15bf47596e">
+        <source>Cart reminder: cart</source>
+        <target>Lembrete de carrinho: carrinho</target>
+      </trans-unit>
+      <trans-unit id="abce3ef910cfc047f0721654cb71f2db">
+        <source>Sent on</source>
+        <target>Enviado em</target>
+      </trans-unit>
+      <trans-unit id="cd97b03241d3766d9cbe13f5f7daefd0">
+        <source>Times sent</source>
+        <target>Vezes enviado</target>
+      </trans-unit>
+      <trans-unit id="aa74397584da0fd719c7f349ba31e399">
+        <source>Discount code</source>
+        <target>Código de desconto</target>
+      </trans-unit>
+      <trans-unit id="8c3137a59676b4780a33a547339a4dc4">
+        <source>Unsubscribed from cart reminders on</source>
+        <target>Subscrição dos lembretes de carrinho cancelada em</target>
+      </trans-unit>
+      <trans-unit id="30772bfbd16205917cbb67d3feac1066">
+        <source>Remind customers about the cart they left, with a one-click link back to it.</source>
+        <target>Lembre os clientes do carrinho que deixaram, com uma ligação de um clique para esse carrinho.</target>
+      </trans-unit>
+      <trans-unit id="3a880b0509da1890e85d2fca69d1d987">
+        <source>Module sections</source>
+        <target>Secções do módulo</target>
+      </trans-unit>
+      <trans-unit id="f4f70727dc34561dfde1a3c529b6205c">
+        <source>Settings</source>
+        <target>Definições</target>
+      </trans-unit>
+      <trans-unit id="a1c58e94227389415de133efdf78ea6e">
+        <source>Appearance</source>
+        <target>Aspeto</target>
+      </trans-unit>
+      <trans-unit id="6bcde6286f8d1b76063ee52104a240cf">
+        <source>Abandoned carts</source>
+        <target>Carrinhos abandonados</target>
+      </trans-unit>
+      <trans-unit id="a0b85b5d9529a3fc308810feaf41cf71">
+        <source>One-off reminder</source>
+        <target>Lembrete avulso</target>
+      </trans-unit>
+      <trans-unit id="2557491405dd96ce43f55a3133cfd1fe">
+        <source>Last 30 days</source>
+        <target>Últimos 30 dias</target>
+      </trans-unit>
+      <trans-unit id="25f7a9fbe99bf8cf3c534451707a92c5">
+        <source>Abandoned · 30 days</source>
+        <target>Abandonados · 30 dias</target>
+      </trans-unit>
+      <trans-unit id="0af50979a187148f9bcab65205f3bf2c">
+        <source>Reminded</source>
+        <target>Lembrados</target>
+      </trans-unit>
+      <trans-unit id="421a47b1ea81b1bc5b495fbacdacc30a">
+        <source>Opened · clicked</source>
+        <target>Abertos · clicados</target>
+      </trans-unit>
+      <trans-unit id="5c4c4cf7bbab0d76fe61420aee14a5ca">
+        <source>Recovered</source>
+        <target>Recuperados</target>
+      </trans-unit>
+      <trans-unit id="a03019ee956cae70e20957aed5a08567">
+        <source>Recovered revenue</source>
+        <target>Receita recuperada</target>
+      </trans-unit>
+      <trans-unit id="7f97cdebef29e3ac0c4c541e76b9e020">
+        <source>E-mail content</source>
+        <target>Conteúdo do e-mail</target>
+      </trans-unit>
+      <trans-unit id="92a9774c2a5df29ac4bffb46219ea9cd">
+        <source>Reminder</source>
+        <target>Lembrete</target>
+      </trans-unit>
+      <trans-unit id="4563ca3b5cd184c30c4380813f7f4632">
+        <source>Reminder %n%</source>
+        <target>Lembrete %n%</target>
+      </trans-unit>
+      <trans-unit id="62f5de976c35425ccbb147586de748c3">
+        <source>after %h% h</source>
+        <target>após %h% h</target>
+      </trans-unit>
+      <trans-unit id="3262d48df5d75e3452f0f16b313b7808">
+        <source>off</source>
+        <target>desligado</target>
+      </trans-unit>
+      <trans-unit id="4994a8ffeba4ac3140beb89e8d41f174">
+        <source>Language</source>
+        <target>Idioma</target>
+      </trans-unit>
+      <trans-unit id="22c9a27a95e20622b849d81d2608c5e3">
+        <source>Each customer gets the e-mail in the language of their cart. Empty fields fall back to the shop default language.</source>
+        <target>Cada cliente recebe o e-mail no idioma do seu carrinho. Os campos vazios usam o idioma predefinido da loja.</target>
+      </trans-unit>
+      <trans-unit id="042e261cc3ee81733547ef81b5016023">
+        <source>Title in the e-mail</source>
+        <target>Título no e-mail</target>
+      </trans-unit>
+      <trans-unit id="4c2a8fe7eaf24721cc7a9f0175115bd4">
+        <source>Message</source>
+        <target>Mensagem</target>
+      </trans-unit>
+      <trans-unit id="03df896fc71cd516fdcf44aa699c4933">
+        <source>Variables</source>
+        <target>Variáveis</target>
+      </trans-unit>
+      <trans-unit id="7e1003be4f2b081b4bd0dcf9cce5c033">
+        <source>click to insert</source>
+        <target>clique para inserir</target>
+      </trans-unit>
+      <trans-unit id="1400b8910e7d8ad03bb9b391282f6c5d">
+        <source>The cart link logs the customer in and opens their exact cart. If it is missing from the message, the button is added at the end.</source>
+        <target>A ligação do carrinho inicia a sessão do cliente e abre exatamente o seu carrinho. Se faltar na mensagem, o botão é acrescentado no fim.</target>
+      </trans-unit>
+      <trans-unit id="14dee5807769f30f20b8d17a6afd951c">
+        <source>Send a test e-mail to</source>
+        <target>Enviar um e-mail de teste para</target>
+      </trans-unit>
+      <trans-unit id="dbac854ec14594d0f743092ff7d507c0">
+        <source>Send the test</source>
+        <target>Enviar o teste</target>
+      </trans-unit>
+      <trans-unit id="9c8e94d005a627c17163e0ffa17db677">
+        <source>Preview and test use the selected reminder, the selected language and the latest abandoned cart. No real code is created; links open the shop without logging anyone in.</source>
+        <target>A pré-visualização e o teste usam o lembrete escolhido, o idioma escolhido e o último carrinho abandonado. Não é criado nenhum código real; as ligações abrem a loja sem iniciar sessão de ninguém.</target>
+      </trans-unit>
+      <trans-unit id="22069f58b83ec2bb295be4f2e338c550">
+        <source>Sending rules</source>
+        <target>Regras de envio</target>
+      </trans-unit>
+      <trans-unit id="46c7fff43efdd810d2054522bd634a00">
+        <source>Automatic sending</source>
+        <target>Envio automático</target>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435">
+        <source>Yes</source>
+        <target>Sim</target>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b">
+        <source>No</source>
+        <target>Não</target>
+      </trans-unit>
+      <trans-unit id="8afd339967b8f7d4a74c74f16d6010d1">
+        <source>No: reminders are only sent from the Abandoned carts tab.</source>
+        <target>Não: os lembretes só são enviados a partir do separador Carrinhos abandonados.</target>
+      </trans-unit>
+      <trans-unit id="d594841169df24d5273a67e62b7ffffe">
+        <source>Reminders</source>
+        <target>Lembretes</target>
+      </trans-unit>
+      <trans-unit id="630c9f814b0517e3fa9587bf181a359e">
+        <source>Send reminder %n%</source>
+        <target>Enviar o lembrete %n%</target>
+      </trans-unit>
+      <trans-unit id="57202719ff9a83fbbf319b8e80cb6a10">
+        <source>Reminder %n% after</source>
+        <target>Lembrete %n% após</target>
+      </trans-unit>
+      <trans-unit id="73cdddd7730abfc13a55efb9f5685a3b">
+        <source>hours</source>
+        <target>horas</target>
+      </trans-unit>
+      <trans-unit id="c13367945d5d4c91047b3b50234aa7ab">
+        <source>code</source>
+        <target>código</target>
+      </trans-unit>
+      <trans-unit id="9cb80361c850a34dd05a754217a36113">
+        <source>Counted from the last change to the cart. Reminders stop as soon as the customer orders or unsubscribes. &quot;Code&quot; adds the discount code below to that reminder.</source>
+        <target>Contado a partir da última alteração do carrinho. Os lembretes param assim que o cliente encomenda ou cancela a subscrição. «Código» acrescenta o código de desconto abaixo a esse lembrete.</target>
+      </trans-unit>
+      <trans-unit id="508ea449bf839cf5aa431f3dd6186316">
+        <source>Who receives reminders</source>
+        <target>Quem recebe lembretes</target>
+      </trans-unit>
+      <trans-unit id="055a87f591bd274b6bc478efdb52dd69">
+        <source>All customers and guests</source>
+        <target>Todos os clientes e convidados</target>
+      </trans-unit>
+      <trans-unit id="3dfccabfc77db460915210175e832ed1">
+        <source>Newsletter subscribers only</source>
+        <target>Só subscritores da newsletter</target>
+      </trans-unit>
+      <trans-unit id="ddb7eda2e59094c1b070ab5a2e8fe992">
+        <source>Customers who accepted partner offers only</source>
+        <target>Só clientes que aceitaram ofertas de parceiros</target>
+      </trans-unit>
+      <trans-unit id="96c9f7f38c16f2f0b0139642b59582bf">
+        <source>Applies to automatic sending. Check what the law of your country requires.</source>
+        <target>Aplica-se ao envio automático. Verifique o que exige a lei do seu país.</target>
+      </trans-unit>
+      <trans-unit id="dbde718e4677cb63af9855ee8d0ace6c">
+        <source>Ignore carts older than</source>
+        <target>Ignorar carrinhos com mais de</target>
+      </trans-unit>
+      <trans-unit id="44fdec47036f482b68b748f9d786801b">
+        <source>days</source>
+        <target>dias</target>
+      </trans-unit>
+      <trans-unit id="d51ce13c217a83b8c6c411b6b4d7be6d">
+        <source>Minimum cart</source>
+        <target>Carrinho mínimo</target>
+      </trans-unit>
+      <trans-unit id="0226bb57a86bd2cedbbd2bb05faf75c7">
+        <source>Blind copy to (optional)</source>
+        <target>Cópia oculta para (opcional)</target>
+      </trans-unit>
+      <trans-unit id="06aaead197d6db73838cc0d75a35f38c">
+        <source>Count opens and clicks</source>
+        <target>Contar aberturas e cliques</target>
+      </trans-unit>
+      <trans-unit id="b7e9c34721bb1bd6605ea5ca6cdcd0c5">
+        <source>Adds an invisible image and passes the cart link through your shop. Opens are approximate: some mail apps load images for privacy, others block them.</source>
+        <target>Acrescenta uma imagem invisível e faz a ligação do carrinho passar pela sua loja. As aberturas são aproximadas: algumas aplicações de e-mail carregam imagens por privacidade, outras bloqueiam-nas.</target>
+      </trans-unit>
+      <trans-unit id="0ee80c26200aac48102c0225f716a262">
+        <source>Cron URL</source>
+        <target>URL do cron</target>
+      </trans-unit>
+      <trans-unit id="754958b9462d4204042eaeab406c7871">
+        <source>Copy the URL</source>
+        <target>Copiar o URL</target>
+      </trans-unit>
+      <trans-unit id="72a7e61bed56dcf6551e2c02306de159">
+        <source>Call it every hour from your hosting panel. Each shop of a multistore has its own URL.</source>
+        <target>Chame-o de hora a hora no seu alojamento. Cada loja de uma multiloja tem o seu próprio URL.</target>
+      </trans-unit>
+      <trans-unit id="9d84f32cb83519a061b3618587efb192">
+        <source>Last run:</source>
+        <target>Última execução:</target>
+      </trans-unit>
+      <trans-unit id="0843dfb8d71d46cad29a2bf683dbe147">
+        <source>%n% sent</source>
+        <target>%n% enviados</target>
+      </trans-unit>
+      <trans-unit id="f451e41ededfc488acc92a771ae9d495">
+        <source>%n% errors</source>
+        <target>%n% erros</target>
+      </trans-unit>
+      <trans-unit id="efb53c06786757219345061039347dac">
+        <source>automatic sending is off</source>
+        <target>o envio automático está desligado</target>
+      </trans-unit>
+      <trans-unit id="c7561db7a418dd39b2201dfe110ab4a4">
+        <source>never</source>
+        <target>nunca</target>
+      </trans-unit>
+      <trans-unit id="521c36a31c2762741cf0f8890cbe05e3">
+        <source>On</source>
+        <target>Ligado</target>
+      </trans-unit>
+      <trans-unit id="d15305d7a4e34e02489c74a5ef542f36">
+        <source>Off</source>
+        <target>Desligado</target>
+      </trans-unit>
+      <trans-unit id="a1fa27779242b4902f7ae3bdd5c6d508">
+        <source>Type</source>
+        <target>Tipo</target>
+      </trans-unit>
+      <trans-unit id="37be07209f53a5d636d5c904ca9ae64c">
+        <source>Percentage</source>
+        <target>Percentagem</target>
+      </trans-unit>
+      <trans-unit id="03b5abfce94180e5b0ba10b2a4f89b43">
+        <source>Fixed amount</source>
+        <target>Montante fixo</target>
+      </trans-unit>
+      <trans-unit id="29aa46cc3d2677c7e0f216910df600ff">
+        <source>Free shipping</source>
+        <target>Portes grátis</target>
+      </trans-unit>
+      <trans-unit id="689202409e48743b914713f96d93947c">
+        <source>Value</source>
+        <target>Valor</target>
+      </trans-unit>
+      <trans-unit id="1a636417d98ec8732ace653dc19b186d">
+        <source>Valid for</source>
+        <target>Válido durante</target>
+      </trans-unit>
+      <trans-unit id="86aa0cecc65d74d58b6109325c0ea67c">
+        <source>Code prefix</source>
+        <target>Prefixo do código</target>
+      </trans-unit>
+      <trans-unit id="a3292cff4997195fc1aab5676d6a9497">
+        <source>Put the code in the customer cart, so it is already applied when they come back</source>
+        <target>Colocar o código no carrinho do cliente, para que já esteja aplicado quando voltar</target>
+      </trans-unit>
+      <trans-unit id="81eeab9506186e2dca8faefa78d54067">
+        <source>Example:</source>
+        <target>Exemplo:</target>
+      </trans-unit>
+      <trans-unit id="0e52e603bc1f85a1db372aeeed0f805e">
+        <source>One code per customer and cart, usable once, only by that customer. Later reminders repeat the same code. Unused codes are deleted a day after they expire.</source>
+        <target>Um código por cliente e carrinho, utilizável uma vez, só por esse cliente. Os lembretes seguintes repetem o mesmo código. Os códigos não usados são apagados um dia depois de expirarem.</target>
+      </trans-unit>
+      <trans-unit id="4f1378e58c8cc37ecad00c155830a1a5">
+        <source>Unsubscribes</source>
+        <target>Cancelamentos</target>
+      </trans-unit>
+      <trans-unit id="673c2253324077860d1f202bfc649b9d">
+        <source>Every reminder has an unsubscribe link and a one-click unsubscribe header (Gmail, Apple Mail).</source>
+        <target>Cada lembrete tem uma ligação para cancelar a subscrição e um cabeçalho de cancelamento num clique (Gmail, Apple Mail).</target>
+      </trans-unit>
+      <trans-unit id="61796f667a730a6f3fffd3c19f5a3ab2">
+        <source>%n% customers unsubscribed; they never get reminders, manual ones included.</source>
+        <target>%n% clientes cancelaram a subscrição; não recebem lembretes, nem manuais.</target>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>Guardar</target>
+      </trans-unit>
+      <trans-unit id="6264f31c9a6831cd1f7965ca4473fe93">
+        <source>E-mail design</source>
+        <target>Design do e-mail</target>
+      </trans-unit>
+      <trans-unit id="91b442d385b54e1418d81adc34871053">
+        <source>Selected</source>
+        <target>Selecionado</target>
+      </trans-unit>
+      <trans-unit id="2b0d4b9f330e2c0f1808e205d59096b0">
+        <source>Customisation</source>
+        <target>Personalização</target>
+      </trans-unit>
+      <trans-unit id="2a9c7c069e91954f4ad5963dbec24ff4">
+        <source>Main colour</source>
+        <target>Cor principal</target>
+      </trans-unit>
+      <trans-unit id="edb28e1a6e0a97b0fa752ca3cfb7c408">
+        <source>Pick the main colour</source>
+        <target>Escolher a cor principal</target>
+      </trans-unit>
+      <trans-unit id="57f06d4df18c3032da59a1cb25a06926">
+        <source>Button, links and accents.</source>
+        <target>Botão, ligações e detalhes.</target>
+      </trans-unit>
+      <trans-unit id="ba4f4d46e4b8ea4e27c120ab08891c64">
+        <source>Header colour</source>
+        <target>Cor do cabeçalho</target>
+      </trans-unit>
+      <trans-unit id="bc2529b2d70177cdb4c355eb165ea438">
+        <source>Pick the header colour</source>
+        <target>Escolher a cor do cabeçalho</target>
+      </trans-unit>
+      <trans-unit id="cfd8a7397786e0889e15dcb51795ffc3">
+        <source>Logo band and footer. The text turns white or black by itself.</source>
+        <target>Faixa do logótipo e rodapé. O texto fica branco ou preto automaticamente.</target>
+      </trans-unit>
+      <trans-unit id="e0a7f2c1d9cacddbece777b93b52eb69">
+        <source>Reassurance strip</source>
+        <target>Faixa de confiança</target>
+      </trans-unit>
+      <trans-unit id="ff012d5c74cff2b617d5e9af055a3651">
+        <source>Language of the texts below</source>
+        <target>Idioma dos textos abaixo</target>
+      </trans-unit>
+      <trans-unit id="111082bb18b636c4493e0370dce09f00">
+        <source>Button text</source>
+        <target>Texto do botão</target>
+      </trans-unit>
+      <trans-unit id="ebf6a693e19a63a1f7fa52800d79dd5e">
+        <source>Tagline next to the shop name (optional)</source>
+        <target>Slogan junto ao nome da loja (opcional)</target>
+      </trans-unit>
+      <trans-unit id="14d91ef1374cb29d382bc28f2d59c445">
+        <source>Up to 3 lines: title | short text.</source>
+        <target>Até 3 linhas: título | texto curto.</target>
+      </trans-unit>
+      <trans-unit id="ae68c7d78a4135cf3d9790ef9f176cdf">
+        <source>Footer text</source>
+        <target>Texto do rodapé</target>
+      </trans-unit>
+      <trans-unit id="137d2d6f01b4762e90938fbe1c053a74">
+        <source>Banner image</source>
+        <target>Imagem de banner</target>
+      </trans-unit>
+      <trans-unit id="31b265af955205e4114faea02825b6df">
+        <source>Showcase design</source>
+        <target>design Montra</target>
+      </trans-unit>
+      <trans-unit id="c3657e2fa3bac3cd2815fe09a6b1ce1d">
+        <source>Current banner</source>
+        <target>Banner atual</target>
+      </trans-unit>
+      <trans-unit id="64191471bf667003ffb9498e4af9a3c6">
+        <source>Remove the image and use the default one</source>
+        <target>Remover a imagem e usar a predefinida</target>
+      </trans-unit>
+      <trans-unit id="0ad1b6ab9c5966883d4c78480479b8e6">
+        <source>1200 × 576 px recommended (JPG, 4 MB max).</source>
+        <target>1200 × 576 px recomendado (JPG, máx. 4 MB).</target>
+      </trans-unit>
+      <trans-unit id="643aeda73bc8357e9b6c9df4e9a4dd78">
+        <source>Default colours of the design</source>
+        <target>Cores predefinidas do design</target>
+      </trans-unit>
+      <trans-unit id="7d0b61c6d390f6bc65400d474038b1f5">
+        <source>Live preview</source>
+        <target>Pré-visualização ao vivo</target>
+      </trans-unit>
+      <trans-unit id="26e28af2d7046c2752fd6a49eb5e05da">
+        <source>Screen size</source>
+        <target>Tamanho do ecrã</target>
+      </trans-unit>
+      <trans-unit id="2310408a63388fe57e3a4177168a8798">
+        <source>Desktop</source>
+        <target>Computador</target>
+      </trans-unit>
+      <trans-unit id="87d17f4624a514e81dc7c8e016a7405c">
+        <source>Mobile</source>
+        <target>Telemóvel</target>
+      </trans-unit>
+      <trans-unit id="a22d1a5c0c44ab251e8af620eb9a82c7">
+        <source>E-mail preview</source>
+        <target>Pré-visualização do e-mail</target>
+      </trans-unit>
+      <trans-unit id="805a5e568de319f7ed3bddc6a5866d68">
+        <source>Updating…</source>
+        <target>A atualizar…</target>
+      </trans-unit>
+      <trans-unit id="02a03582671ac2e8309b180357c7b48d">
+        <source>Open full screen</source>
+        <target>Abrir em ecrã inteiro</target>
+      </trans-unit>
+      <trans-unit id="eadbf76bbfc1edd595a66318f94dbf67">
+        <source>Example: reminder 1 with the latest abandoned cart. The message is edited in the Settings tab.</source>
+        <target>Exemplo: lembrete 1 com o último carrinho abandonado. A mensagem edita-se no separador Definições.</target>
+      </trans-unit>
+      <trans-unit id="6eee8a4de1c70d4957532f17e6b7f83b">
+        <source>No abandoned cart to remind in the last 90 days.</source>
+        <target>Não há carrinhos abandonados a lembrar nos últimos 90 dias.</target>
+      </trans-unit>
+      <trans-unit id="ea908e1191c534380bf7b1806eb9867f">
+        <source>Customer and cart</source>
+        <target>Cliente e carrinho</target>
+      </trans-unit>
+      <trans-unit id="fdee7e2be9e433f75062f2a09e17e15e">
+        <source>Cart to remind</source>
+        <target>Carrinho a lembrar</target>
+      </trans-unit>
+      <trans-unit id="266840b8474ea9fd83d0fa327c32e9fa">
+        <source>The texts below are reminder %n% in the language of this cart. Choosing another cart reloads them.</source>
+        <target>Os textos abaixo são o lembrete %n% no idioma deste carrinho. Escolher outro carrinho volta a carregá-los.</target>
+      </trans-unit>
+      <trans-unit id="1afa74da05ca145d3418aad9af510109">
+        <source>Design</source>
+        <target>Design</target>
+      </trans-unit>
+      <trans-unit id="29dfce78c84bfe8e4f65bee55ab776cb">
+        <source>Include the discount code</source>
+        <target>Incluir o código de desconto</target>
+      </trans-unit>
+      <trans-unit id="1ecace99a23174c587b94dda2bbe2e2f">
+        <source>turn on the discount code in Settings first</source>
+        <target>ligue primeiro o código de desconto nas Definições</target>
+      </trans-unit>
+      <trans-unit id="2499971497ac8f9c9476f8b1a5315aef">
+        <source>These choices apply to this e-mail only; your saved settings do not change.</source>
+        <target>Estas escolhas valem só para este e-mail; as suas definições guardadas não mudam.</target>
+      </trans-unit>
+      <trans-unit id="ef717ae2645226362d892d99b73ff8db">
+        <source>Test to</source>
+        <target>Teste para</target>
+      </trans-unit>
+      <trans-unit id="ba00e40241d93b9a3341df968ca7b553">
+        <source>Send this e-mail to %name%?</source>
+        <target>Enviar este e-mail para %name%?</target>
+      </trans-unit>
+      <trans-unit id="c973ca9903bf6e6942c945f02775669f">
+        <source>Send to</source>
+        <target>Enviar para</target>
+      </trans-unit>
+      <trans-unit id="56df907155f228c0eeb7321fe4b0bce6">
+        <source>Preview with the real cart of the customer. In the preview and the test, links open the cart page without logging anyone in.</source>
+        <target>Pré-visualização com o carrinho real do cliente. Na pré-visualização e no teste, as ligações abrem a página do carrinho sem iniciar sessão de ninguém.</target>
+      </trans-unit>
+      <trans-unit id="ec53a8c4f07baed5d8825072c89799be">
+        <source>Status</source>
+        <target>Estado</target>
+      </trans-unit>
+      <trans-unit id="b1c94ca2fbc3e78fc30069c8d0f01680">
+        <source>All</source>
+        <target>Todos</target>
+      </trans-unit>
+      <trans-unit id="fdc7aa92ecb714c25019e988c09aeffa">
+        <source>Unsubscribed</source>
+        <target>Subscrição cancelada</target>
+      </trans-unit>
+      <trans-unit id="1901606ea069a83dc7beea17881ef95a">
+        <source>Period</source>
+        <target>Período</target>
+      </trans-unit>
+      <trans-unit id="4e6251a059b431419f7090d66bcdc372">
+        <source>Last 7 days</source>
+        <target>Últimos 7 dias</target>
+      </trans-unit>
+      <trans-unit id="a369a30db898552a1967dc4030dc4d5f">
+        <source>Last 90 days</source>
+        <target>Últimos 90 dias</target>
+      </trans-unit>
+      <trans-unit id="ce26601dac0dea138b7295f02b7620a7">
+        <source>Customer</source>
+        <target>Cliente</target>
+      </trans-unit>
+      <trans-unit id="a4359dab85058087145c3f8abea1052e">
+        <source>Name, e-mail or cart number</source>
+        <target>Nome, e-mail ou n.º do carrinho</target>
+      </trans-unit>
+      <trans-unit id="d7778d0c64b6ba21494c97f77a66885a">
+        <source>Filter</source>
+        <target>Filtrar</target>
+      </trans-unit>
+      <trans-unit id="3b94d571928b9b632593b4a013508e18">
+        <source>Selected carts:</source>
+        <target>Carrinhos selecionados:</target>
+      </trans-unit>
+      <trans-unit id="132ce6fb4f5599760ca596e38265fc60">
+        <source>Send the next reminder to the selected carts?</source>
+        <target>Enviar o próximo lembrete aos carrinhos selecionados?</target>
+      </trans-unit>
+      <trans-unit id="63560e2d9a7dc960172d7ffa2bf976c2">
+        <source>Send the reminder to the selection</source>
+        <target>Enviar o lembrete à seleção</target>
+      </trans-unit>
+      <trans-unit id="4c41e0bd957698b58100a5c687d757d9">
+        <source>Select all</source>
+        <target>Selecionar tudo</target>
+      </trans-unit>
+      <trans-unit id="a85eba4c6c699122b2bb1387ea4813ad">
+        <source>Cart</source>
+        <target>Carrinho</target>
+      </trans-unit>
+      <trans-unit id="068f80c7519d0528fb08e82137a72131">
+        <source>Products</source>
+        <target>Produtos</target>
+      </trans-unit>
+      <trans-unit id="96b0141273eabab320119c467cdcaf17">
+        <source>Total</source>
+        <target>Total</target>
+      </trans-unit>
+      <trans-unit id="bc5188ca43d423ba3730e4c030609d6e">
+        <source>Last activity</source>
+        <target>Última atividade</target>
+      </trans-unit>
+      <trans-unit id="06df33001c1d7187fdd81ea1f5b277aa">
+        <source>Actions</source>
+        <target>Ações</target>
+      </trans-unit>
+      <trans-unit id="e2c2fde093096536d8eff6fee0e2d4d7">
+        <source>Select cart %id%</source>
+        <target>Selecionar o carrinho %id%</target>
+      </trans-unit>
+      <trans-unit id="084e0343a0486ff05530df6c705c8bb4">
+        <source>guest</source>
+        <target>convidado</target>
+      </trans-unit>
+      <trans-unit id="08a3df73ef6900962fb70412501ac123">
+        <source>%n% items</source>
+        <target>%n% artigos</target>
+      </trans-unit>
+      <trans-unit id="fb18cf9852785b9535cfb9319e5ffb73">
+        <source>Reminder %n% of %max% sent · %date%</source>
+        <target>Lembrete %n% de %max% enviado · %date%</target>
+      </trans-unit>
+      <trans-unit id="2bd9c0ed00116be1258e0cc66617d7c8">
+        <source>automatic</source>
+        <target>automático</target>
+      </trans-unit>
+      <trans-unit id="cbec7a935e329acc581ea0c3a304a48a">
+        <source>one-off</source>
+        <target>avulso</target>
+      </trans-unit>
+      <trans-unit id="3c78b35502b2693fefdfc51cba3a53a5">
+        <source>manual</source>
+        <target>manual</target>
+      </trans-unit>
+      <trans-unit id="946bdda3d589ff7ec84f9373c1efd8a4">
+        <source>sent %n% times</source>
+        <target>enviado %n% vezes</target>
+      </trans-unit>
+      <trans-unit id="d6b6f6be9e26437af034a5b21db613ed">
+        <source>Recovered · order #%id%</source>
+        <target>Recuperado · encomenda n.º %id%</target>
+      </trans-unit>
+      <trans-unit id="ca0dbad92a874b2f69b549293387925e">
+        <source>Code</source>
+        <target>Código</target>
+      </trans-unit>
+      <trans-unit id="25cef55c3b1dbe74262a45a2bab90108">
+        <source>Opened, not clicked</source>
+        <target>Aberto, sem clique</target>
+      </trans-unit>
+      <trans-unit id="2c4c760c7fd923e5bbf0da8155afdc8d">
+        <source>Not opened yet</source>
+        <target>Ainda não aberto</target>
+      </trans-unit>
+      <trans-unit id="cb8fe83175bea4ba19d633b1dc6ea656">
+        <source>View order</source>
+        <target>Ver a encomenda</target>
+      </trans-unit>
+      <trans-unit id="7e3d2b328c87ae52db007e772b1815ed">
+        <source>One-off reminder for cart %id%</source>
+        <target>Lembrete avulso para o carrinho %id%</target>
+      </trans-unit>
+      <trans-unit id="791ad6dd8697623a4456580bf3eec763">
+        <source>Remind</source>
+        <target>Lembrar</target>
+      </trans-unit>
+      <trans-unit id="f9e408092830a854988b24de461a359d">
+        <source>Send the last reminder again to this customer?</source>
+        <target>Voltar a enviar o último lembrete a este cliente?</target>
+      </trans-unit>
+      <trans-unit id="50ab1d847e175723e3f782f780d72b16">
+        <source>Send again</source>
+        <target>Voltar a enviar</target>
+      </trans-unit>
+      <trans-unit id="f2331f89f8f7e16b6dfedeedc494192a">
+        <source>No cart matches these filters.</source>
+        <target>Nenhum carrinho corresponde a estes filtros.</target>
+      </trans-unit>
+      <trans-unit id="10c705c8d10478a03c74e57372b12885">
+        <source>%n% carts</source>
+        <target>%n% carrinhos</target>
+      </trans-unit>
+      <trans-unit id="cbb81506a7fe3ef03f7a89c76c52131a">
+        <source>Pagination</source>
+        <target>Paginação</target>
+      </trans-unit>
+      <trans-unit id="0b9cba5e32be92459abae9324535e757">
+        <source>Top Rated on Fiverr</source>
+        <target>Top Rated no Fiverr</target>
+      </trans-unit>
+      <trans-unit id="76344130f12a1a5b20c45500ea5bb523">
+        <source>PrestaShop developer</source>
+        <target>Programador PrestaShop</target>
+      </trans-unit>
+      <trans-unit id="7df57fc7789ecb855336f929a3fc35af">
+        <source>Need help with this module, or a custom feature for your store? I reply quickly.</source>
+        <target>Precisa de ajuda com este módulo ou de uma funcionalidade à medida para a sua loja? Respondo rapidamente.</target>
+      </trans-unit>
+      <trans-unit id="ffbf9ff02b1003b31d0306fa7670c352">
+        <source>Store design</source>
+        <target>Design de lojas</target>
+      </trans-unit>
+      <trans-unit id="9e9767281dac49f7dae5a42b57e08e08">
+        <source>Custom module development</source>
+        <target>Desenvolvimento de módulos à medida</target>
+      </trans-unit>
+      <trans-unit id="227f56a61b5e696248ed78e91360ae2b">
+        <source>Custom data migration (blogs, reviews, any platform)</source>
+        <target>Migração de dados à medida (blogs, avaliações, qualquer plataforma)</target>
+      </trans-unit>
+      <trans-unit id="fbfe78d513908fe2b009a431e7eae128">
+        <source>Upgrades and bug fixes</source>
+        <target>Atualizações e correção de erros</target>
+      </trans-unit>
+      <trans-unit id="808c092a179c6a13566d93bdd950acdf">
+        <source>Hire me on Fiverr</source>
+        <target>Contrate-me no Fiverr</target>
+      </trans-unit>
+      <trans-unit id="8b777ebcc5034ce0fe96dd154bcb370e">
+        <source>WhatsApp</source>
+        <target>WhatsApp</target>
+      </trans-unit>
+      <trans-unit id="a35ddbb21fb0048f67062a127b3c3bb4">
+        <source>Free PrestaShop 9 modules and themes</source>
+        <target>Módulos e temas gratuitos para PrestaShop 9</target>
+      </trans-unit>
+      <trans-unit id="3d20dda23d8e7a8b9e8aa85f350bee54">
+        <source>Open source and in 10 languages. Every theme has a live demo.</source>
+        <target>Código aberto e em 10 idiomas. Cada tema tem uma demonstração ao vivo.</target>
+      </trans-unit>
+      <trans-unit id="7b2f76ccc798b6dfed18dc3a1ed3325f">
+        <source>See all on GitHub</source>
+        <target>Ver tudo no GitHub</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

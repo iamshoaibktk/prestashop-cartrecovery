@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="cartrecovery" source-language="en-US" target-language="nl-NL" datatype="plaintext">
+    <body>
+      <trans-unit id="6a873557a949032e4e5916fea7a74615">
+        <source>Any questions? Just reply to this e-mail.</source>
+        <target>Vragen? Beantwoord gewoon deze e-mail.</target>
+      </trans-unit>
+      <trans-unit id="5ab4109b5d86a89b26409200429e29fb">
+        <source>See you soon,</source>
+        <target>Tot snel,</target>
+      </trans-unit>
+      <trans-unit id="3afd4cf0665598d480044118ddbd85de">
+        <source>The {shop_name} team</source>
+        <target>Het team van {shop_name}</target>
+      </trans-unit>
+      <trans-unit id="0ea14e8fba12497f426ac78a1b9cf404">
+        <source>{firstname}, your cart is waiting for you</source>
+        <target>{firstname}, je winkelwagen wacht op je</target>
+      </trans-unit>
+      <trans-unit id="d45bf146fcff7e185c691045cec9eb5c">
+        <source>Your cart is waiting</source>
+        <target>Je winkelwagen wacht</target>
+      </trans-unit>
+      <trans-unit id="af4a9762622ee0bbcb91c3d98a0ecf29">
+        <source>Hello {firstname},</source>
+        <target>Hallo {firstname},</target>
+      </trans-unit>
+      <trans-unit id="d2349efb78e94b57d0791d96cd99cc3f">
+        <source>You left a few items in your cart at {shop_name}. We have kept them for you.</source>
+        <target>Je hebt een paar artikelen in je winkelwagen bij {shop_name} laten staan. We hebben ze voor je bewaard.</target>
+      </trans-unit>
+      <trans-unit id="4e0f6c5f92ecddde8df1817768ae58ae">
+        <source>Click the button below to get your cart back and complete your order:</source>
+        <target>Klik op de knop hieronder om je winkelwagen terug te halen en je bestelling af te ronden:</target>
+      </trans-unit>
+      <trans-unit id="7f6dc7c91ad44fd3e2eebbc8f55facdc">
+        <source>Still thinking it over, {firstname}?</source>
+        <target>Twijfel je nog, {firstname}?</target>
+      </trans-unit>
+      <trans-unit id="3b37bbcffda123cb921d66d5390562c9">
+        <source>Still thinking it over?</source>
+        <target>Twijfel je nog?</target>
+      </trans-unit>
+      <trans-unit id="e4a8ff16ace3f8e23c77c91c7ce31eed">
+        <source>Your cart at {shop_name} is still saved. If you have a question about a product, delivery or payment, just reply to this e-mail: we are happy to help.</source>
+        <target>Je winkelwagen bij {shop_name} is nog bewaard. Heb je een vraag over een product, de levering of de betaling? Beantwoord gewoon deze e-mail: we helpen je graag.</target>
+      </trans-unit>
+      <trans-unit id="7b2354b2b4a86cbd5b8c98a72719ef8c">
+        <source>Last reminder: your cart at {shop_name}</source>
+        <target>Laatste herinnering: je winkelwagen bij {shop_name}</target>
+      </trans-unit>
+      <trans-unit id="1adb5e6616f26277774e5b9d94f4de29">
+        <source>Last reminder</source>
+        <target>Laatste herinnering</target>
+      </trans-unit>
+      <trans-unit id="d016b98b46ceb22406e3cb6242d63256">
+        <source>This is our last e-mail about the items you left in your cart. If you still want them, your cart is one click away.</source>
+        <target>Dit is onze laatste e-mail over de artikelen in je winkelwagen. Wil je ze nog, dan is je winkelwagen één klik verwijderd.</target>
+      </trans-unit>
+      <trans-unit id="fa46005ef620361f25cc3b3e47a27cf4">
+        <source>Thank you,</source>
+        <target>Bedankt,</target>
+      </trans-unit>
+      <trans-unit id="f2dc581f5ba99360e73a935ddd9454d1">
+        <source>Complete my order</source>
+        <target>Bestelling afronden</target>
+      </trans-unit>
+      <trans-unit id="caf1bb25e577eb707cd404938d6539f7">
+        <source>You are receiving this e-mail because you created a cart in our shop.</source>
+        <target>Je ontvangt deze e-mail omdat je een winkelwagen in onze winkel hebt aangemaakt.</target>
+      </trans-unit>
+      <trans-unit id="5f30702c50f64d0a952d11470cdd9447">
+        <source>Secure payment</source>
+        <target>Veilig betalen</target>
+      </trans-unit>
+      <trans-unit id="790cbf19d9205b560fbdf083a347935f">
+        <source>Your data is protected</source>
+        <target>Je gegevens zijn beschermd</target>
+      </trans-unit>
+      <trans-unit id="5fe663a384335f0895fe0b6db7e8a7d7">
+        <source>Tracked delivery</source>
+        <target>Track &amp; trace</target>
+      </trans-unit>
+      <trans-unit id="16e93fc6e3db6ae0cd9f63c935c7136e">
+        <source>On every order</source>
+        <target>Bij elke bestelling</target>
+      </trans-unit>
+      <trans-unit id="2273d1167a6212812d95dc8fadbae78e">
+        <source>Customer service</source>
+        <target>Klantenservice</target>
+      </trans-unit>
+      <trans-unit id="953b7ff396b086dfc018b00d94ab9db5">
+        <source>We reply quickly</source>
+        <target>Snel antwoord</target>
+      </trans-unit>
+      <trans-unit id="87d79ab54ac272b93bd8bd17a26c49d6">
+        <source>Your personal discount code</source>
+        <target>Je persoonlijke kortingscode</target>
+      </trans-unit>
+      <trans-unit id="146806032e276ed397df426774ca38da">
+        <source>%firstname%, your items are still in your cart.</source>
+        <target>%firstname%, je artikelen liggen nog in je winkelwagen.</target>
+      </trans-unit>
+      <trans-unit id="1037768a22c2a8364304f3525e248e31">
+        <source>Free shipping on your order</source>
+        <target>Gratis verzending op je bestelling</target>
+      </trans-unit>
+      <trans-unit id="9153a7db5eafceaebdef04e404a483b5">
+        <source>%value% off your order</source>
+        <target>%value% korting op je bestelling</target>
+      </trans-unit>
+      <trans-unit id="62e4527becc6017a7d4985a58b3b24cb">
+        <source>Valid until %date%</source>
+        <target>Geldig tot %date%</target>
+      </trans-unit>
+      <trans-unit id="ddbeaaf4eaee0da6556e0771e77f9405">
+        <source>It is already applied to your cart.</source>
+        <target>Hij is al toegepast op je winkelwagen.</target>
+      </trans-unit>
+      <trans-unit id="f4484e27900abffa6f20a6bf8c03860d">
+        <source>Enter it at checkout.</source>
+        <target>Vul hem in bij het afrekenen.</target>
+      </trans-unit>
+      <trans-unit id="adc852563bca51fb6b10c7905010406d">
+        <source>Total (tax incl.)</source>
+        <target>Totaal (incl. btw)</target>
+      </trans-unit>
+      <trans-unit id="2e07337280e0df29bed76f5dc519ed8a">
+        <source>Quantity: %qty%</source>
+        <target>Aantal: %qty%</target>
+      </trans-unit>
+      <trans-unit id="b9b90d855bf7958cdf3ed690e727edbb">
+        <source>Button not working?</source>
+        <target>Werkt de knop niet?</target>
+      </trans-unit>
+      <trans-unit id="48e7e2654a0b1d4d46bb58818c049c72">
+        <source>Open my cart</source>
+        <target>Mijn winkelwagen openen</target>
+      </trans-unit>
+      <trans-unit id="549df70610a092518e0b673586a19484">
+        <source>Unsubscribe from cart reminders</source>
+        <target>Afmelden voor winkelwagenherinneringen</target>
+      </trans-unit>
+      <trans-unit id="99b3b409bf694d0987506adc396386a2">
+        <source>free shipping</source>
+        <target>gratis verzending</target>
+      </trans-unit>
+      <trans-unit id="eeddfeb3d9d6723d275ed78761e72137">
+        <source>Your cart discount</source>
+        <target>Je winkelwagenkorting</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

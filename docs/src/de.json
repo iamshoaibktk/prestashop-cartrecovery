@@ -1,0 +1,46 @@
+{
+  "title": "Warenkorb-Erinnerung",
+  "subtitle": "Benutzerhandbuch",
+  "labels": {"version": "Version", "author": "Autor", "contact": "Kontakt", "page": "Seite", "contents": "Inhalt", "compat": "Kompatibilität"},
+  "sections": [
+    {"title": "Überblick", "content": [
+      {"p": "Das Modul schreibt Kunden und Gästen, die Produkte im Warenkorb gelassen haben. Jede E-Mail hat einen Button, der den Kunden anmeldet und genau seinen Warenkorb öffnet."},
+      {"ul": ["Bis zu 3 Erinnerungen pro Warenkorb, jede mit eigener Wartezeit und eigenem Text.", "Texte in jeder Sprache Ihres Shops.", "Ein optionaler persönlicher Rabattcode, für den Kunden erstellt und einmal nutzbar.", "Ein Abmeldelink in jeder E-Mail.", "Öffnungen, Klicks, zurückgewonnene Warenkörbe und Umsatz."]},
+      {"p": "Öffnen Sie es unter **Module › Modulmanager › Warenkorb-Erinnerung › Konfigurieren**."}
+    ]},
+    {"title": "Erste Einrichtung", "content": [
+      {"ol": ["Prüfen Sie unter **Einstellungen** die Texte von Erinnerung 1 in jeder Sprache (auf die Sprach-Buttons klicken).", "Geben Sie Ihre Adresse bei **Test-E-Mail senden an** ein und klicken Sie auf **Test senden**.", "Kopieren Sie die **Cron-URL** und rufen Sie sie stündlich über Ihr Hosting auf, zum Beispiel: curl -s \"<Cron-URL>\" > /dev/null", "Stellen Sie **Automatischer Versand** auf **Ja** und speichern Sie."]},
+      {"note": "Ohne Cron wird nichts automatisch gesendet. Erinnerungen können Sie trotzdem von Hand im Tab Verlassene Warenkörbe senden."}
+    ]},
+    {"title": "Erinnerungen und Zeiten", "content": [
+      {"p": "Erinnerung 1 ist immer aktiv. Erinnerung 2 und 3 schalten Sie unter **Versandregeln** ein. Die Zeiten zählen ab der letzten Änderung am Warenkorb; ändert der Kunde den Warenkorb, beginnt die Zählung neu."},
+      {"ul": ["Erinnerungen enden, sobald der Kunde bestellt oder sich abmeldet.", "Zwei Erinnerungen zum selben Warenkorb liegen nie weniger als eine Stunde auseinander.", "**Warenkörbe ignorieren, älter als** hält alte Warenkörbe heraus, wenn Sie den automatischen Versand einschalten.", "**Wer erhält Erinnerungen** kann den automatischen Versand auf Newsletter-Abonnenten oder Kunden mit Zustimmung zu Partnerangeboten beschränken."]}
+    ]},
+    {"title": "Texte und Variablen", "content": [
+      {"p": "Jede Erinnerung hat pro Sprache einen Betreff, einen Titel und eine Nachricht. Klicken Sie auf eine Variable, um sie in die Nachricht einzufügen."},
+      {"table": [["Variable", "Wird zu"], ["{firstname} {lastname}", "dem Namen des Kunden"], ["{cart_products}", "einer Tabelle der Produkte mit Bildern und Preisen"], ["{cart_link}", "dem Button zurück zum Warenkorb"], ["{discount_block}", "einer Box mit dem Rabattcode"], ["{discount_code} {discount_value} {discount_expiry}", "Code, Wert und letztem Gültigkeitstag"], ["{unsubscribe_url}", "dem Abmeldelink"]]},
+      {"note": "Fehlt {cart_link} in der Nachricht, wird der Button am Ende ergänzt. Gibt es einen Rabatt und keine Rabattvariable, erscheint die Box über dem Button."}
+    ]},
+    {"title": "Rabattcodes", "content": [
+      {"p": "Schalten Sie **Rabattcode** ein und wählen Sie Prozentsatz, festen Betrag oder kostenlosen Versand, den Wert, die Gültigkeit in Tagen und optional einen Mindestwarenkorb. Haken Sie dann **Code** bei den Erinnerungen an, die ihn enthalten sollen."},
+      {"ul": ["Jeder Code ist eine PrestaShop-Warenkorbregel nur für diesen Kunden, einmal nutzbar.", "Spätere Erinnerungen wiederholen denselben Code, solange er gültig ist.", "Mit **Code in den Warenkorb des Kunden legen** ist der Rabatt bei der Rückkehr schon angewendet.", "Ungenutzte Codes löscht der Cron einen Tag nach Ablauf."]}
+    ]},
+    {"title": "Darstellung", "content": [
+      {"p": "Wählen Sie eines von 4 Designs (Klassisch, Kräftig, Minimal, Schaufenster) und stellen Sie Hauptfarbe, Farbe des Kopfbereichs, Button-Text, einen optionalen Slogan, die Vertrauensleiste, die Fußzeile und das Bannerbild ein. Die Live-Vorschau zeigt die E-Mail mit einem echten Warenkorb, auf Desktop oder Mobil."}
+    ]},
+    {"title": "Verlassene Warenkörbe und einzelne Erinnerungen", "content": [
+      {"p": "Der Tab **Verlassene Warenkörbe** listet Warenkörbe von Kunden und Gästen mit Status: nicht erinnert, Erinnerung N gesendet, zurückgewonnen (mit Bestellung) oder abgemeldet. Filtern Sie nach Status, Zeitraum oder Kunde und senden Sie die nächste Erinnerung an einen Warenkorb oder eine Auswahl."},
+      {"p": "Der Stift öffnet **Einzelne Erinnerung**: Design, Text oder Rabatt nur für diesen Kunden ändern und senden. Ihre gespeicherten Einstellungen bleiben unverändert."}
+    ]},
+    {"title": "Datenschutz und Abmeldungen", "content": [
+      {"ul": ["Die Abmeldeseite fragt nach einer Bestätigung, damit Mail-Scanner niemanden abmelden. Gmail und Apple Mail können auch mit einem Klick abmelden.", "Abgemeldete Kunden erhalten keine Erinnerungen mehr, auch keine manuellen.", "Mit **Öffnungen und Klicks zählen** enthält die E-Mail ein unsichtbares Bild und der Warenkorb-Link läuft über Ihren Shop. Schalten Sie es bei Bedarf aus.", "Das Modul beantwortet Export- und Löschanfragen des offiziellen DSGVO-Moduls von PrestaShop."]},
+      {"note": "Prüfen Sie, was das Recht Ihres Landes verlangt, bevor Sie Kunden ohne Einwilligung in Marketing-E-Mails anschreiben."}
+    ]},
+    {"title": "Gut zu wissen", "content": [
+      {"ul": ["Gäste können erinnert werden, sobald sie an der Kasse ihre E-Mail eingegeben haben. Besucher ohne E-Mail nicht.", "Im Multistore folgen die Einstellungen dem Shop-Kontext, und jeder Shop hat seine eigene Cron-URL.", "Die E-Mails nutzen die E-Mail-Einstellungen Ihres Shops (Erweiterte Einstellungen › E-Mail). Prüfen Sie sie mit der Test-E-Mail.", "Öffnungen sind ungefähr: Manche Mail-Apps laden Bilder aus Datenschutzgründen, andere blockieren sie."]}
+    ]},
+    {"title": "Support", "content": [
+      {"p": "Kostenlos und Open Source (AFL-3.0). Fragen, individuelle Funktionen oder Hilfe mit Ihrem Shop: iamshoaibktk@gmail.com, WhatsApp +923459016286, https://www.fiverr.com/shoaibktk"}
+    ]}
+  ]
+}

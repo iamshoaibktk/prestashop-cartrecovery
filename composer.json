@@ -1,0 +1,15 @@
+{
+  "name": "iamshoaibktk/cartrecovery",
+  "description": "Abandoned cart reminders for PrestaShop 8 and 9: up to 3 e-mails, discount codes, unsubscribe, open and click stats.",
+  "type": "prestashop-module",
+  "license": "AFL-3.0",
+  "authors": [
+    { "name": "iamshoaibktk", "email": "iamshoaibktk@gmail.com", "role": "Developer" }
+  ],
+  "support": { "email": "iamshoaibktk@gmail.com" },
+  "require": { "php": ">=7.2.5" },
+  "autoload": {
+    "psr-4": { "Iamshoaibktk\\Cartrecovery\\": "src/" }
+  },
+  "config": { "prepend-autoloader": false, "optimize-autoloader": true }
+}

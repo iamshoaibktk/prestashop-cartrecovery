@@ -1,0 +1,46 @@
+{
+  "title": "Recuperação de carrinhos abandonados",
+  "subtitle": "Guia de utilização",
+  "labels": {"version": "Versão", "author": "Autor", "contact": "Contacto", "page": "Página", "contents": "Índice", "compat": "Compatibilidade"},
+  "sections": [
+    {"title": "Visão geral", "content": [
+      {"p": "O módulo envia e-mails aos clientes e convidados que deixaram produtos no carrinho. Cada e-mail tem um botão que inicia a sessão do cliente e abre exatamente o seu carrinho."},
+      {"ul": ["Até 3 lembretes por carrinho, cada um com o seu atraso e o seu texto.", "Textos em todos os idiomas da sua loja.", "Um código de desconto pessoal opcional, criado para o cliente e utilizável uma vez.", "Uma ligação para cancelar a subscrição em cada e-mail.", "Aberturas, cliques, carrinhos recuperados e receita recuperada."]},
+      {"p": "Abra-o em **Módulos › Gestor de módulos › Recuperação de carrinhos abandonados › Configurar**."}
+    ]},
+    {"title": "Primeira configuração", "content": [
+      {"ol": ["Em **Definições**, verifique os textos do lembrete 1 em cada idioma (clique nos botões de idioma).", "Escreva o seu endereço em **Enviar um e-mail de teste para** e clique em **Enviar o teste**.", "Copie o **URL do cron** e chame-o de hora a hora no seu alojamento, por exemplo: curl -s \"<URL do cron>\" > /dev/null", "Coloque **Envio automático** em **Sim** e guarde."]},
+      {"note": "Sem o cron, nada é enviado automaticamente. Pode sempre enviar lembretes à mão no separador Carrinhos abandonados."}
+    ]},
+    {"title": "Lembretes e tempos", "content": [
+      {"p": "O lembrete 1 está sempre ligado. Os lembretes 2 e 3 ligam-se em **Regras de envio**. Os tempos contam a partir da última alteração do carrinho: se o cliente o alterar, começa de novo."},
+      {"ul": ["Os lembretes param assim que o cliente encomenda ou cancela a subscrição.", "Dois lembretes do mesmo carrinho nunca saem com menos de uma hora de intervalo.", "**Ignorar carrinhos com mais de** deixa de fora os carrinhos antigos quando liga o envio automático.", "**Quem recebe lembretes** pode limitar o envio automático aos subscritores da newsletter ou aos clientes que aceitaram ofertas de parceiros."]}
+    ]},
+    {"title": "Textos e variáveis", "content": [
+      {"p": "Cada lembrete tem assunto, título e mensagem por idioma. Clique numa variável para a inserir na mensagem."},
+      {"table": [["Variável", "Passa a ser"], ["{firstname} {lastname}", "o nome do cliente"], ["{cart_products}", "uma tabela dos produtos com imagens e preços"], ["{cart_link}", "o botão de volta ao carrinho"], ["{discount_block}", "uma caixa com o código de desconto"], ["{discount_code} {discount_value} {discount_expiry}", "o código, o valor e o último dia válido"], ["{unsubscribe_url}", "a ligação para cancelar a subscrição"]]},
+      {"note": "Se a mensagem não tiver {cart_link}, o botão é acrescentado no fim. Se houver desconto e a mensagem não tiver variáveis de desconto, a caixa é acrescentada por cima do botão."}
+    ]},
+    {"title": "Códigos de desconto", "content": [
+      {"p": "Ligue **Código de desconto**, escolha percentagem, montante fixo ou portes grátis, o valor, os dias de validade e um carrinho mínimo opcional. Depois marque **código** junto dos lembretes que o devem levar."},
+      {"ul": ["Cada código é uma regra de carrinho do PrestaShop só para esse cliente, utilizável uma vez.", "Os lembretes seguintes repetem o mesmo código enquanto for válido.", "Com **Colocar o código no carrinho do cliente**, o desconto já está aplicado quando ele volta.", "Os códigos não usados são apagados pelo cron um dia depois de expirarem."]}
+    ]},
+    {"title": "Aspeto", "content": [
+      {"p": "Escolha um dos 4 designs (Clássico, Forte, Minimalista, Montra) e defina a cor principal, a cor do cabeçalho, o texto do botão, um slogan opcional, a faixa de confiança, o rodapé e a imagem de banner. A pré-visualização ao vivo mostra o e-mail com um carrinho real, no computador ou no telemóvel."}
+    ]},
+    {"title": "Carrinhos abandonados e lembretes avulsos", "content": [
+      {"p": "O separador **Carrinhos abandonados** lista os carrinhos de clientes e convidados com o estado: não lembrado, lembrete N enviado, recuperado (com a encomenda) ou subscrição cancelada. Filtre por estado, período ou cliente e envie o lembrete seguinte a um carrinho ou a uma seleção."},
+      {"p": "O lápis abre **Lembrete avulso**: altere o design, o texto ou o desconto só para esse cliente e envie. As suas definições guardadas não mudam."}
+    ]},
+    {"title": "Privacidade e cancelamentos", "content": [
+      {"ul": ["A página de cancelamento pede confirmação, para que os scanners de e-mail nunca cancelem ninguém. O Gmail e o Apple Mail também permitem cancelar num clique.", "Os clientes que cancelaram não recebem nenhum lembrete, nem manual.", "Com **Contar aberturas e cliques**, o e-mail tem uma imagem invisível e a ligação do carrinho passa pela sua loja. Desligue-o se preferir.", "O módulo responde aos pedidos de exportação e eliminação do módulo RGPD oficial do PrestaShop."]},
+      {"note": "Verifique o que exige a lei do seu país antes de escrever a clientes que não aceitaram e-mails de marketing."}
+    ]},
+    {"title": "Bom saber", "content": [
+      {"ul": ["Um convidado pode receber lembretes assim que escreve o e-mail no checkout. Um visitante que nunca deu o e-mail, não.", "Em multiloja, as definições seguem o contexto da loja e cada loja tem o seu URL do cron.", "Os e-mails usam as definições de e-mail da loja (Parâmetros avançados › E-mail). Verifique-as com o e-mail de teste.", "As aberturas são aproximadas: algumas aplicações carregam imagens por privacidade, outras bloqueiam-nas."]}
+    ]},
+    {"title": "Suporte", "content": [
+      {"p": "Gratuito e de código aberto (AFL-3.0). Dúvidas, funcionalidades à medida ou ajuda com a sua loja: iamshoaibktk@gmail.com, WhatsApp +923459016286, https://www.fiverr.com/shoaibktk"}
+    ]}
+  ]
+}

@@ -1,0 +1,12 @@
+{cr_title_txt}
+
+{cr_body_txt}
+
+--
+{cr_shop_name_txt}{cr_tagline_sep_txt}
+{shop_url}
+{cr_shop_email}
+
+{cr_footer_txt}
+
+{cr_unsub_label_txt}: {cr_unsub_url_txt}

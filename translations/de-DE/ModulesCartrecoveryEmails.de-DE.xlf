@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="cartrecovery" source-language="en-US" target-language="de-DE" datatype="plaintext">
+    <body>
+      <trans-unit id="6a873557a949032e4e5916fea7a74615">
+        <source>Any questions? Just reply to this e-mail.</source>
+        <target>Fragen? Antworten Sie einfach auf diese E-Mail.</target>
+      </trans-unit>
+      <trans-unit id="5ab4109b5d86a89b26409200429e29fb">
+        <source>See you soon,</source>
+        <target>Bis bald,</target>
+      </trans-unit>
+      <trans-unit id="3afd4cf0665598d480044118ddbd85de">
+        <source>The {shop_name} team</source>
+        <target>Ihr {shop_name}-Team</target>
+      </trans-unit>
+      <trans-unit id="0ea14e8fba12497f426ac78a1b9cf404">
+        <source>{firstname}, your cart is waiting for you</source>
+        <target>{firstname}, Ihr Warenkorb wartet auf Sie</target>
+      </trans-unit>
+      <trans-unit id="d45bf146fcff7e185c691045cec9eb5c">
+        <source>Your cart is waiting</source>
+        <target>Ihr Warenkorb wartet</target>
+      </trans-unit>
+      <trans-unit id="af4a9762622ee0bbcb91c3d98a0ecf29">
+        <source>Hello {firstname},</source>
+        <target>Hallo {firstname},</target>
+      </trans-unit>
+      <trans-unit id="d2349efb78e94b57d0791d96cd99cc3f">
+        <source>You left a few items in your cart at {shop_name}. We have kept them for you.</source>
+        <target>Sie haben ein paar Artikel in Ihrem Warenkorb bei {shop_name} gelassen. Wir haben sie für Sie aufbewahrt.</target>
+      </trans-unit>
+      <trans-unit id="4e0f6c5f92ecddde8df1817768ae58ae">
+        <source>Click the button below to get your cart back and complete your order:</source>
+        <target>Klicken Sie auf den Button unten, um Ihren Warenkorb wiederzufinden und Ihre Bestellung abzuschließen:</target>
+      </trans-unit>
+      <trans-unit id="7f6dc7c91ad44fd3e2eebbc8f55facdc">
+        <source>Still thinking it over, {firstname}?</source>
+        <target>Noch am Überlegen, {firstname}?</target>
+      </trans-unit>
+      <trans-unit id="3b37bbcffda123cb921d66d5390562c9">
+        <source>Still thinking it over?</source>
+        <target>Noch am Überlegen?</target>
+      </trans-unit>
+      <trans-unit id="e4a8ff16ace3f8e23c77c91c7ce31eed">
+        <source>Your cart at {shop_name} is still saved. If you have a question about a product, delivery or payment, just reply to this e-mail: we are happy to help.</source>
+        <target>Ihr Warenkorb bei {shop_name} ist noch gespeichert. Haben Sie eine Frage zu einem Produkt, zum Versand oder zur Zahlung? Antworten Sie einfach auf diese E-Mail, wir helfen gern.</target>
+      </trans-unit>
+      <trans-unit id="7b2354b2b4a86cbd5b8c98a72719ef8c">
+        <source>Last reminder: your cart at {shop_name}</source>
+        <target>Letzte Erinnerung: Ihr Warenkorb bei {shop_name}</target>
+      </trans-unit>
+      <trans-unit id="1adb5e6616f26277774e5b9d94f4de29">
+        <source>Last reminder</source>
+        <target>Letzte Erinnerung</target>
+      </trans-unit>
+      <trans-unit id="d016b98b46ceb22406e3cb6242d63256">
+        <source>This is our last e-mail about the items you left in your cart. If you still want them, your cart is one click away.</source>
+        <target>Dies ist unsere letzte E-Mail zu den Artikeln in Ihrem Warenkorb. Wenn Sie sie noch möchten, ist Ihr Warenkorb nur einen Klick entfernt.</target>
+      </trans-unit>
+      <trans-unit id="fa46005ef620361f25cc3b3e47a27cf4">
+        <source>Thank you,</source>
+        <target>Vielen Dank,</target>
+      </trans-unit>
+      <trans-unit id="f2dc581f5ba99360e73a935ddd9454d1">
+        <source>Complete my order</source>
+        <target>Bestellung abschließen</target>
+      </trans-unit>
+      <trans-unit id="caf1bb25e577eb707cd404938d6539f7">
+        <source>You are receiving this e-mail because you created a cart in our shop.</source>
+        <target>Sie erhalten diese E-Mail, weil Sie in unserem Shop einen Warenkorb angelegt haben.</target>
+      </trans-unit>
+      <trans-unit id="5f30702c50f64d0a952d11470cdd9447">
+        <source>Secure payment</source>
+        <target>Sichere Zahlung</target>
+      </trans-unit>
+      <trans-unit id="790cbf19d9205b560fbdf083a347935f">
+        <source>Your data is protected</source>
+        <target>Ihre Daten sind geschützt</target>
+      </trans-unit>
+      <trans-unit id="5fe663a384335f0895fe0b6db7e8a7d7">
+        <source>Tracked delivery</source>
+        <target>Sendungsverfolgung</target>
+      </trans-unit>
+      <trans-unit id="16e93fc6e3db6ae0cd9f63c935c7136e">
+        <source>On every order</source>
+        <target>Bei jeder Bestellung</target>
+      </trans-unit>
+      <trans-unit id="2273d1167a6212812d95dc8fadbae78e">
+        <source>Customer service</source>
+        <target>Kundenservice</target>
+      </trans-unit>
+      <trans-unit id="953b7ff396b086dfc018b00d94ab9db5">
+        <source>We reply quickly</source>
+        <target>Schnelle Antwort</target>
+      </trans-unit>
+      <trans-unit id="87d79ab54ac272b93bd8bd17a26c49d6">
+        <source>Your personal discount code</source>
+        <target>Ihr persönlicher Rabattcode</target>
+      </trans-unit>
+      <trans-unit id="146806032e276ed397df426774ca38da">
+        <source>%firstname%, your items are still in your cart.</source>
+        <target>%firstname%, Ihre Artikel liegen noch im Warenkorb.</target>
+      </trans-unit>
+      <trans-unit id="1037768a22c2a8364304f3525e248e31">
+        <source>Free shipping on your order</source>
+        <target>Kostenloser Versand für Ihre Bestellung</target>
+      </trans-unit>
+      <trans-unit id="9153a7db5eafceaebdef04e404a483b5">
+        <source>%value% off your order</source>
+        <target>%value% Rabatt auf Ihre Bestellung</target>
+      </trans-unit>
+      <trans-unit id="62e4527becc6017a7d4985a58b3b24cb">
+        <source>Valid until %date%</source>
+        <target>Gültig bis %date%</target>
+      </trans-unit>
+      <trans-unit id="ddbeaaf4eaee0da6556e0771e77f9405">
+        <source>It is already applied to your cart.</source>
+        <target>Er ist bereits auf Ihren Warenkorb angewendet.</target>
+      </trans-unit>
+      <trans-unit id="f4484e27900abffa6f20a6bf8c03860d">
+        <source>Enter it at checkout.</source>
+        <target>Geben Sie ihn an der Kasse ein.</target>
+      </trans-unit>
+      <trans-unit id="adc852563bca51fb6b10c7905010406d">
+        <source>Total (tax incl.)</source>
+        <target>Summe (inkl. MwSt.)</target>
+      </trans-unit>
+      <trans-unit id="2e07337280e0df29bed76f5dc519ed8a">
+        <source>Quantity: %qty%</source>
+        <target>Menge: %qty%</target>
+      </trans-unit>
+      <trans-unit id="b9b90d855bf7958cdf3ed690e727edbb">
+        <source>Button not working?</source>
+        <target>Button funktioniert nicht?</target>
+      </trans-unit>
+      <trans-unit id="48e7e2654a0b1d4d46bb58818c049c72">
+        <source>Open my cart</source>
+        <target>Meinen Warenkorb öffnen</target>
+      </trans-unit>
+      <trans-unit id="549df70610a092518e0b673586a19484">
+        <source>Unsubscribe from cart reminders</source>
+        <target>Von Warenkorb-Erinnerungen abmelden</target>
+      </trans-unit>
+      <trans-unit id="99b3b409bf694d0987506adc396386a2">
+        <source>free shipping</source>
+        <target>kostenloser Versand</target>
+      </trans-unit>
+      <trans-unit id="eeddfeb3d9d6723d275ed78761e72137">
+        <source>Your cart discount</source>
+        <target>Ihr Warenkorb-Rabatt</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,46 @@
+{
+  "title": "Recupero carrelli abbandonati",
+  "subtitle": "Guida all'uso",
+  "labels": {"version": "Versione", "author": "Autore", "contact": "Contatti", "page": "Pagina", "contents": "Indice", "compat": "Compatibilità"},
+  "sections": [
+    {"title": "Panoramica", "content": [
+      {"p": "Il modulo scrive ai clienti e agli ospiti che hanno lasciato prodotti nel carrello. Ogni e-mail ha un pulsante che fa accedere il cliente e apre esattamente il suo carrello."},
+      {"ul": ["Fino a 3 promemoria per carrello, ognuno con il suo ritardo e il suo testo.", "Testi in tutte le lingue del negozio.", "Un codice sconto personale facoltativo, creato per il cliente e utilizzabile una volta.", "Un link per annullare l'iscrizione in ogni e-mail.", "Aperture, clic, carrelli recuperati e fatturato recuperato."]},
+      {"p": "Aprilo da **Moduli › Gestione moduli › Recupero carrelli abbandonati › Configura**."}
+    ]},
+    {"title": "Prima configurazione", "content": [
+      {"ol": ["In **Impostazioni**, controlla i testi del promemoria 1 in ogni lingua (clicca sui pulsanti delle lingue).", "Inserisci il tuo indirizzo in **Invia un'e-mail di prova a** e clicca su **Invia la prova**.", "Copia l'**URL del cron** e richiamalo ogni ora dal tuo hosting, per esempio: curl -s \"<URL cron>\" > /dev/null", "Imposta **Invio automatico** su **Sì** e salva."]},
+      {"note": "Senza il cron non parte nulla in automatico. Puoi sempre inviare i promemoria a mano dalla scheda Carrelli abbandonati."}
+    ]},
+    {"title": "Promemoria e tempi", "content": [
+      {"p": "Il promemoria 1 è sempre attivo. I promemoria 2 e 3 si attivano in **Regole di invio**. I tempi contano dall'ultima modifica del carrello: se il cliente lo modifica, si riparte da capo."},
+      {"ul": ["I promemoria si fermano appena il cliente ordina o annulla l'iscrizione.", "Due promemoria dello stesso carrello non partono mai a meno di un'ora di distanza.", "**Ignora carrelli più vecchi di** esclude i vecchi carrelli quando attivi l'invio automatico.", "**Chi riceve i promemoria** può limitare l'invio automatico agli iscritti alla newsletter o ai clienti che hanno accettato le offerte dei partner."]}
+    ]},
+    {"title": "Testi e variabili", "content": [
+      {"p": "Ogni promemoria ha oggetto, titolo e messaggio per lingua. Clicca su una variabile per inserirla nel messaggio."},
+      {"table": [["Variabile", "Diventa"], ["{firstname} {lastname}", "il nome del cliente"], ["{cart_products}", "una tabella dei prodotti con immagini e prezzi"], ["{cart_link}", "il pulsante per tornare al carrello"], ["{discount_block}", "un riquadro con il codice sconto"], ["{discount_code} {discount_value} {discount_expiry}", "il codice, il valore e l'ultimo giorno di validità"], ["{unsubscribe_url}", "il link per annullare l'iscrizione"]]},
+      {"note": "Se il messaggio non contiene {cart_link}, il pulsante viene aggiunto alla fine. Se c'è uno sconto e il messaggio non ha variabili di sconto, il riquadro viene aggiunto sopra il pulsante."}
+    ]},
+    {"title": "Codici sconto", "content": [
+      {"p": "Attiva **Codice sconto**, scegli percentuale, importo fisso o spedizione gratuita, il valore, i giorni di validità e un carrello minimo facoltativo. Poi spunta **codice** accanto ai promemoria che devono contenerlo."},
+      {"ul": ["Ogni codice è una regola carrello di PrestaShop solo per quel cliente, utilizzabile una volta.", "I promemoria successivi ripetono lo stesso codice finché è valido.", "Con **Metti il codice nel carrello del cliente**, lo sconto è già applicato quando torna.", "Il cron elimina i codici non usati un giorno dopo la scadenza."]}
+    ]},
+    {"title": "Aspetto", "content": [
+      {"p": "Scegli uno dei 4 modelli (Classico, Deciso, Minimal, Vetrina) e imposta il colore principale, il colore dell'intestazione, il testo del pulsante, uno slogan facoltativo, la fascia di rassicurazione, il piè di pagina e l'immagine banner. L'anteprima dal vivo mostra l'e-mail con un carrello reale, su desktop o mobile."}
+    ]},
+    {"title": "Carrelli abbandonati e promemoria singoli", "content": [
+      {"p": "La scheda **Carrelli abbandonati** elenca i carrelli di clienti e ospiti con lo stato: non ricordato, promemoria N inviato, recuperato (con l'ordine) o disiscritto. Filtra per stato, periodo o cliente e invia il promemoria successivo a un carrello o a una selezione."},
+      {"p": "La matita apre **Promemoria singolo**: cambia modello, testo o sconto solo per quel cliente e invia. Le impostazioni salvate non cambiano."}
+    ]},
+    {"title": "Privacy e disiscrizioni", "content": [
+      {"ul": ["La pagina di disiscrizione chiede una conferma, così gli scanner di posta non disiscrivono nessuno. Gmail e Apple Mail permettono anche la disiscrizione in un clic.", "I clienti disiscritti non ricevono più promemoria, neanche manuali.", "Con **Conta aperture e clic**, l'e-mail contiene un'immagine invisibile e il link del carrello passa dal tuo negozio. Disattivalo se preferisci.", "Il modulo risponde alle richieste di esportazione e cancellazione del modulo GDPR ufficiale di PrestaShop."]},
+      {"note": "Verifica cosa richiede la legge del tuo paese prima di scrivere a clienti che non hanno accettato e-mail di marketing."}
+    ]},
+    {"title": "Da sapere", "content": [
+      {"ul": ["Un ospite può ricevere promemoria appena inserisce l'e-mail al checkout. Un visitatore che non ha mai dato l'e-mail no.", "In multinegozio le impostazioni seguono il contesto del negozio e ogni negozio ha il suo URL del cron.", "Le e-mail usano le impostazioni e-mail del negozio (Parametri avanzati › E-mail). Verificale con l'e-mail di prova.", "Le aperture sono approssimative: alcune app di posta caricano le immagini per privacy, altre le bloccano."]}
+    ]},
+    {"title": "Assistenza", "content": [
+      {"p": "Gratuito e open source (AFL-3.0). Domande, funzioni su misura o aiuto per il tuo negozio: iamshoaibktk@gmail.com, WhatsApp +923459016286, https://www.fiverr.com/shoaibktk"}
+    ]}
+  ]
+}

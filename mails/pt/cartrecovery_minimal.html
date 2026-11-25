@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{cr_lang}" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<title>{cr_title}</title>
+<style type="text/css">
+  body { margin:0; padding:0; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+  table { border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; }
+  img { border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
+  a { color:#1f1f1f; }
+  @media only screen and (max-width: 620px) {
+    .cr-outer { padding:0 !important; }
+    .cr-wrap { width:100% !important; border-radius:0 !important; }
+    .cr-pad { padding-left:20px !important; padding-right:20px !important; }
+    .cr-title { font-size:21px !important; }
+    .cr-hero { width:100% !important; height:auto !important; }
+    .cr-pcol { display:none !important; }
+    .cr-pm { display:block !important; max-height:none !important; overflow:visible !important; }
+    .cr-col { display:block !important; width:100% !important; padding-left:0 !important; padding-right:0 !important; }
+    .cr-hide-m { display:none !important; }
+    .cr-reas-td { display:block !important; width:100% !important; padding:6px 0 !important; text-align:left !important; }
+    .cr-stack { display:block !important; width:100% !important; text-align:left !important; }
+  }
+</style>
+<!--[if mso]><style type="text/css">body, table, td, p, a { font-family: Arial, sans-serif !important; }</style><![endif]-->
+</head>
+<body style="margin:0;padding:0;background:#ffffff;">
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;">{cr_preheader}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#ffffff;">
+  <tr>
+    <td class="cr-outer" align="center" style="padding:28px 12px;">
+      <table role="presentation" class="cr-wrap" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:600px;background:#ffffff;">
+        <tr>
+          <td class="cr-pad" bgcolor="{cr_header_bg}" style="background:{cr_header_bg};padding:14px 0;border-bottom:1px solid #e3e3e3;">
+            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+              <td valign="middle"><a href="{shop_url}" target="_blank"><img src="{shop_logo}" height="48" alt="{shop_name}" style="display:block;height:48px;width:auto;max-width:220px;border:0;"></a></td>
+              <td align="right" valign="middle" style="font-family:Tahoma,Arial,sans-serif;font-size:13px;"><a href="{shop_url}" target="_blank" style="color:{cr_header_text};text-decoration:none;">{cr_shop_domain}</a></td>
+            </tr></table>
+          </td>
+        </tr>
+        <tr>
+          <td class="cr-pad" style="padding:40px 0 0;">
+            <h1 class="cr-title" style="margin:0;font-family:Tahoma,Arial,sans-serif;font-size:28px;line-height:1.25;font-weight:bold;color:#1f1f1f;">{cr_title}</h1>
+          </td>
+        </tr>
+        <tr>
+          <td class="cr-pad" style="padding:18px 0 22px;font-family:Tahoma,Arial,sans-serif;font-size:15px;line-height:1.65;color:#2a2a2a;">
+            {cr_body}
+          </td>
+        </tr>
+        <tr>
+          <td class="cr-pad" style="padding:18px 0 0;border-top:1px solid #e3e3e3;font-family:Tahoma,Arial,sans-serif;font-size:12px;line-height:1.7;color:#6b6b6b;">
+            {cr_reassurance}
+            <div>{shop_name}{cr_tagline_sep} · <a href="mailto:{cr_shop_email}" style="color:#1f1f1f;">{cr_shop_email}</a></div>
+            <div>{cr_footer}</div>
+            <div style="margin-top:6px;"><a href="{cr_unsub_url}" target="_blank" style="color:#6b6b6b;">{cr_unsub_label}</a></div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+{cr_pixel_tag}
+</body>
+</html>

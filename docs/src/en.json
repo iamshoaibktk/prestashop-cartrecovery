@@ -1,0 +1,46 @@
+{
+  "title": "Abandoned Cart Recovery",
+  "subtitle": "User guide",
+  "labels": {"version": "Version", "author": "Author", "contact": "Contact", "page": "Page", "contents": "Contents", "compat": "Compatibility"},
+  "sections": [
+    {"title": "Overview", "content": [
+      {"p": "Abandoned Cart Recovery e-mails customers and guests who left products in their cart. Each e-mail has a button that logs the customer in and opens their exact cart."},
+      {"ul": ["Up to 3 reminders per cart, each with its own delay and text.", "Texts in every language of your shop.", "An optional personal discount code, created for the customer and usable once.", "An unsubscribe link in every e-mail.", "Opens, clicks, recovered carts and recovered revenue."]},
+      {"p": "Open it from **Modules › Module Manager › Abandoned Cart Recovery › Configure**."}
+    ]},
+    {"title": "First setup", "content": [
+      {"ol": ["In **Settings**, check the texts of reminder 1 in each language (click the language pills).", "Enter your address in **Send a test e-mail to** and click **Send the test**.", "Copy the **Cron URL** and call it every hour from your hosting panel, for example: curl -s \"<cron URL>\" > /dev/null", "Set **Automatic sending** to **Yes** and save."]},
+      {"note": "Without the cron, nothing is sent automatically. You can still send reminders by hand from the Abandoned carts tab."}
+    ]},
+    {"title": "Reminders and timing", "content": [
+      {"p": "Reminder 1 is always on. Reminders 2 and 3 can be switched on in **Sending rules**. Delays count from the last change to the cart, so a customer who edits the cart starts again."},
+      {"ul": ["Reminders stop as soon as the customer places an order or unsubscribes.", "Two reminders of the same cart are never sent less than an hour apart.", "**Ignore carts older than** keeps old carts out when you switch automatic sending on.", "**Who receives reminders** can limit automatic sending to newsletter subscribers or to customers who accepted partner offers."]}
+    ]},
+    {"title": "Texts and variables", "content": [
+      {"p": "Each reminder has a subject, a title and a message per language. Click a variable to insert it in the message."},
+      {"table": [["Variable", "Becomes"], ["{firstname} {lastname}", "the customer name"], ["{cart_products}", "a table of the products with images and prices"], ["{cart_link}", "the button back to the cart"], ["{discount_block}", "a box with the discount code"], ["{discount_code} {discount_value} {discount_expiry}", "the code, its value and last valid day"], ["{unsubscribe_url}", "the unsubscribe link"]]},
+      {"note": "If the message has no {cart_link}, the button is added at the end. If a discount is offered and the message has no discount variable, the box is added above the button."}
+    ]},
+    {"title": "Discount codes", "content": [
+      {"p": "Switch **Discount code** on, choose percentage, fixed amount or free shipping, the value, how many days the code works and an optional minimum cart. Then tick **code** next to the reminders that should carry it."},
+      {"ul": ["Each code is a PrestaShop cart rule for that customer only, usable once.", "Later reminders repeat the same code while it is valid.", "With **Put the code in the customer cart**, the discount is already applied when they come back.", "Unused codes are deleted by the cron a day after they expire."]}
+    ]},
+    {"title": "Appearance", "content": [
+      {"p": "Choose one of 4 designs (Classic, Bold, Minimal, Showcase) and set the main colour, the header colour, the button text, an optional tagline, the reassurance strip, the footer and the banner image. The live preview shows the e-mail with a real cart, on desktop or mobile."}
+    ]},
+    {"title": "Abandoned carts and one-off reminders", "content": [
+      {"p": "The **Abandoned carts** tab lists carts of customers and guests with their status: not reminded, reminder N sent, recovered (with the order) or unsubscribed. Filter by status, period or customer, send the next reminder to one cart or to a selection."},
+      {"p": "The pencil opens **One-off reminder**: change the design, the text or the discount for that customer only and send it. Your saved settings do not change."}
+    ]},
+    {"title": "Privacy and unsubscribes", "content": [
+      {"ul": ["The unsubscribe page asks the customer to confirm, so mail scanners never unsubscribe anyone. Gmail and Apple Mail can also unsubscribe in one click.", "Unsubscribed customers get no reminders at all, manual ones included.", "With **Count opens and clicks**, the e-mail contains an invisible image and the cart link passes through your shop. Switch it off if you prefer.", "The module answers the export and delete requests of PrestaShop's official GDPR module."]},
+      {"note": "Check what the law of your country requires before you e-mail customers who did not agree to marketing e-mails."}
+    ]},
+    {"title": "Good to know", "content": [
+      {"ul": ["Guests can be reminded once they typed their e-mail at checkout. Visitors who never gave an e-mail cannot.", "In a multistore, settings follow the shop context and each shop has its own cron URL.", "E-mails use your shop's e-mail settings (Advanced parameters › E-mail). Use the test e-mail to check them.", "Opens are approximate: some mail apps load images for privacy, others block them."]}
+    ]},
+    {"title": "Support", "content": [
+      {"p": "Free and open source (AFL-3.0). Questions, custom features or help with your shop: iamshoaibktk@gmail.com, WhatsApp +923459016286, https://www.fiverr.com/shoaibktk"}
+    ]}
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Verlaten winkelwagens terugwinnen",
+  "subtitle": "Handleiding",
+  "labels": {"version": "Versie", "author": "Auteur", "contact": "Contact", "page": "Pagina", "contents": "Inhoud", "compat": "Compatibiliteit"},
+  "sections": [
+    {"title": "Overzicht", "content": [
+      {"p": "De module mailt klanten en gasten die producten in hun winkelwagen hebben laten staan. Elke e-mail heeft een knop die de klant inlogt en precies zijn winkelwagen opent."},
+      {"ul": ["Tot 3 herinneringen per winkelwagen, elk met eigen wachttijd en tekst.", "Teksten in elke taal van uw winkel.", "Een optionele persoonlijke kortingscode, gemaakt voor de klant en één keer te gebruiken.", "Een afmeldlink in elke e-mail.", "Openingen, klikken, teruggewonnen winkelwagens en omzet."]},
+      {"p": "Open de module via **Modules › Modulebeheer › Verlaten winkelwagens terugwinnen › Configureren**."}
+    ]},
+    {"title": "Eerste instellingen", "content": [
+      {"ol": ["Controleer in **Instellingen** de teksten van herinnering 1 in elke taal (klik op de taalknoppen).", "Vul uw adres in bij **Test-e-mail sturen naar** en klik op **Test sturen**.", "Kopieer de **Cron-URL** en roep hem elk uur aan vanuit uw hosting, bijvoorbeeld: curl -s \"<cron-URL>\" > /dev/null", "Zet **Automatisch verzenden** op **Ja** en sla op."]},
+      {"note": "Zonder cron gaat er niets automatisch. U kunt herinneringen altijd met de hand sturen vanuit het tabblad Verlaten winkelwagens."}
+    ]},
+    {"title": "Herinneringen en tijden", "content": [
+      {"p": "Herinnering 1 staat altijd aan. Herinnering 2 en 3 zet u aan bij **Verzendregels**. De tijden tellen vanaf de laatste wijziging van de winkelwagen: past de klant de winkelwagen aan, dan begint het opnieuw."},
+      {"ul": ["Herinneringen stoppen zodra de klant bestelt of zich afmeldt.", "Twee herinneringen voor dezelfde winkelwagen gaan nooit binnen een uur na elkaar.", "**Winkelwagens negeren ouder dan** houdt oude winkelwagens buiten als u automatisch verzenden aanzet.", "**Wie krijgt herinneringen** kan automatisch verzenden beperken tot nieuwsbriefabonnees of klanten die partneraanbiedingen accepteerden."]}
+    ]},
+    {"title": "Teksten en variabelen", "content": [
+      {"p": "Elke herinnering heeft per taal een onderwerp, een titel en een bericht. Klik op een variabele om die in het bericht te zetten."},
+      {"table": [["Variabele", "Wordt"], ["{firstname} {lastname}", "de naam van de klant"], ["{cart_products}", "een tabel met producten, afbeeldingen en prijzen"], ["{cart_link}", "de knop terug naar de winkelwagen"], ["{discount_block}", "een vak met de kortingscode"], ["{discount_code} {discount_value} {discount_expiry}", "de code, de waarde en de laatste geldige dag"], ["{unsubscribe_url}", "de afmeldlink"]]},
+      {"note": "Staat {cart_link} niet in het bericht, dan komt de knop aan het eind. Is er korting en geen kortingsvariabele, dan komt het vak boven de knop."}
+    ]},
+    {"title": "Kortingscodes", "content": [
+      {"p": "Zet **Kortingscode** aan, kies percentage, vast bedrag of gratis verzending, de waarde, het aantal geldige dagen en eventueel een minimale winkelwagen. Vink daarna **code** aan bij de herinneringen die hem moeten bevatten."},
+      {"ul": ["Elke code is een PrestaShop-winkelwagenregel alleen voor die klant, één keer te gebruiken.", "Latere herinneringen herhalen dezelfde code zolang die geldig is.", "Met **De code in de winkelwagen van de klant zetten** is de korting al toegepast als de klant terugkomt.", "Ongebruikte codes worden door de cron een dag na afloop verwijderd."]}
+    ]},
+    {"title": "Weergave", "content": [
+      {"p": "Kies een van de 4 ontwerpen (Klassiek, Krachtig, Minimaal, Etalage) en stel de hoofdkleur, de kleur van de kop, de knoptekst, een optionele slogan, de vertrouwensbalk, de voettekst en de bannerafbeelding in. Het live voorbeeld toont de e-mail met een echte winkelwagen, op desktop of mobiel."}
+    ]},
+    {"title": "Verlaten winkelwagens en losse herinneringen", "content": [
+      {"p": "Het tabblad **Verlaten winkelwagens** toont de winkelwagens van klanten en gasten met hun status: niet herinnerd, herinnering N verzonden, teruggewonnen (met de bestelling) of afgemeld. Filter op status, periode of klant en stuur de volgende herinnering naar één winkelwagen of een selectie."},
+      {"p": "Het potlood opent **Losse herinnering**: wijzig ontwerp, tekst of korting alleen voor die klant en verstuur. Uw opgeslagen instellingen veranderen niet."}
+    ]},
+    {"title": "Privacy en afmeldingen", "content": [
+      {"ul": ["De afmeldpagina vraagt om bevestiging, zodat mailscanners nooit iemand afmelden. Gmail en Apple Mail kunnen ook in één klik afmelden.", "Afgemelde klanten krijgen geen herinneringen meer, ook geen handmatige.", "Met **Openingen en klikken tellen** bevat de e-mail een onzichtbare afbeelding en loopt de winkelwagenlink via uw winkel. Zet het uit als u dat wilt.", "De module beantwoordt export- en verwijderverzoeken van de officiële AVG-module van PrestaShop."]},
+      {"note": "Controleer wat de wet in uw land vereist voordat u klanten mailt die geen marketingmails accepteerden."}
+    ]},
+    {"title": "Goed om te weten", "content": [
+      {"ul": ["Een gast kan herinneringen krijgen zodra hij bij het afrekenen zijn e-mail invult. Een bezoeker zonder e-mail niet.", "In een multistore volgen de instellingen de winkelcontext en heeft elke winkel een eigen cron-URL.", "De e-mails gebruiken de e-mailinstellingen van uw winkel (Geavanceerde instellingen › E-mail). Controleer ze met de test-e-mail.", "Openingen zijn bij benadering: sommige mailapps laden afbeeldingen voor privacy, andere blokkeren ze."]}
+    ]},
+    {"title": "Ondersteuning", "content": [
+      {"p": "Gratis en open source (AFL-3.0). Vragen, functies op maat of hulp met uw winkel: iamshoaibktk@gmail.com, WhatsApp +923459016286, https://www.fiverr.com/shoaibktk"}
+    ]}
+  ]
+}
