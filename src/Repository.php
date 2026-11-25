@@ -115,7 +115,9 @@ class Repository
         $count = 0;
         $imgType = \ImageType::getFormattedName('small');
         try {
-            foreach ($cart->getProducts(true, false, $idLang) as $prod) {
+            // Names and links in the requested language (not saved). The third argument of getProducts() is a country.
+            $cart->id_lang = $idLang;
+            foreach ($cart->getProducts(true) as $prod) {
                 $qty = (int) $prod['cart_quantity'];
                 $count += $qty;
                 $img = '';
